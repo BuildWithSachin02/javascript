@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a =50, b = -55, c = 5, d = 5, e = 5;
+        if(a == b && b == c && c == d && d == e){
+            console.log("all numbers are equal");
+        }else{
+            if(a>b){
+                if(a>c){
+                    if(a>d){
+                        if(a>e){
+                            console.log("a is max.");
+                        }else{
+                            console.log("e is max.");
+                        }
+                    }else{
+                        if(d>e){
+                            console.log("d is max.");
+                        }else{
+                            console.log("e is max.");
+                        }
+                    }
+                }else{
+                    if(c>d){
+                        if(c>e){
+                            console.log("c is max.");
+                        }else{
+                            console.log("e is max.");
+                        }
+                    }else{
+                        if(d>e){
+                            console.log("d is max.");
+                        }else{
+                            console.log("e is max.");
+                        }
+                    }
+                }
+            }else{     // b>c , b>d, b>e, c>d, c>e, d>e
+                if(b>c){
+                    if(b>d){
+                        if(b>e){
+                            console.log("b is max.");
+                        }else{
+                            console.log("e is max.");
+                        }
+                    }else{
+                        if(d>e){
+                            console.log("d is max.");
+                        }else{
+                            console.log("e is max.");
+                        }
+                    }
+                }else{
+                    if(c>d){
+                        if(c>e){
+                            console.log("c is max.");
+                        }else{
+                            console.log("c is max.");
+                        }
+                    }else{
+                        if(d>e){
+                            console.log("d is max.");
+                        }else{
+                            console.log("e is max.");
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
