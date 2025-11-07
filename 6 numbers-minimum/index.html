@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a program of 6 numbers and that can find a minimum numbers.
+        // a = a>b,a>c,a>d,a>e,a>f
+        // b = b>c,b>d,b>e,b>f
+        // c = c>d,c>e,c>f
+        // d = d>e,d>f
+        // e = e>f   
+        // less than 
+        const a = 10, b = 1, c = 44, d = 45, e = 50, f = 6; 
+        if(a == b && b == c && c == d && d == e && e == f){
+            console.log("all are equals.");
+        }else{
+            if(a<b){
+                if(a<c){
+                    if(a<d){
+                        if(a<e){
+                            if(a<f){
+                                console.log("a is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }else{
+                            if(e<f){
+                                console.log("e is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }
+                    }else{
+                        if(d<e){
+                            if(d<f){
+                                console.log("d is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }else{
+                            if(e<f){
+                                console.log("e is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }
+                    }
+                }else{
+                    if(c<d){
+                        if(c<e){
+                            if(c<f){
+                                console.log("c is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }else{
+                            if(e<f){
+                                console.log("e is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }
+                    }else{
+                        if(d<e){
+                            if(d<f){
+                                console.log("d is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }else{
+                            if(e<f){
+                                console.log("e is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }
+                    }
+                }
+            }else{
+                if(b<c){
+                    if(b<d){
+                        if(b<e){
+                            if(b<f){
+                                console.log("b is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }else{
+                            if(e<f){
+                                console.log("e is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }
+                    }else{
+                        if(d<e){
+                            if(d<f){
+                                console.log("d is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }else{
+                            if(e<f){
+                                console.log("e is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }
+                    }
+                }else{
+                    if(c<d){
+                        if(c<e){
+                            if(c<f){
+                                console.log("c is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }else{
+                            if(e<f){
+                                console.log("e is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }
+                    }else{
+                        if(d<e){
+                            if(d<f){
+                                console.log("d is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }else{
+                            if(e<f){
+                                console.log("e is min");
+                            }else{
+                                console.log("f is min");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
