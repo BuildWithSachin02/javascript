@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a program calculate grade based on student percentage of 5 subjects.
+
+	/*
+		total subject = 5
+		per sub marks(5*100)= 500
+		compaire me total ke sath krana 
+		per % pe comapire 
+		35-56% = d
+		56-70% = c
+		70-80% = b
+		80-90% = a
+		90-100% = a+
+	*/
+        const a=90, b=0, c=0, d=0, e=0;
+        let total, avg, per;
+        total      = a+b+c+d+e;
+        avg    = total/5;
+        per = (total/500)*100;
+        
+        // output
+        console.log(`Total marks: ${total}`);
+        console.log(`Average: ${avg.toFixed(2)}`); // issme toFixed (yeh fixed ka pehla letter hmesa capital ho Fixed agr small hoga toh output will be not showing up.)
+        console.log(`percentage: ${per.toFixed(2)}%`);
+        if(per<35){
+            console.log("Garde:            Fail.");   // iska mtlb yeh h ki per<35 jab kis student ka per 34 toh fail h aur 35 bhi
+        }                                              // hoga.
+        else if(per>35 && per<=56){
+            console.log("Garde:            D\n.");     // issme scnerio kuch esa jab student ka per 36 se ya 56 ke ander ho usko hum d grade      
+        }
+        else if(per>56 && per<=70){
+            console.log("Garde:            C\n.");
+        }
+        else if(per>70 && per<=80){
+            console.log("Garde:            B\n.");
+        }
+        else if(per>80 && per<=90){
+            console.log("Garde:            A\n.");
+        }
+        else if(per>90 && per<=100){
+            console.log("Garde:            A+\n.");
+        }
+    </script>
+</body>
+</html>
