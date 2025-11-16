@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ind-bix Q.12=>
+		// Look at this series: 14, 28, 20, 40, 32, 64, ... What number should come next?
+		// issme start hoga 14 hogi  isse dekh lg rha ki har ek number *2 se multiply 
+		// ho rha h 14*2=28 odd mujhe pe hum *2 krnge even pe -8 krnege
+        
+        // for loop
+        let x = 14;
+        let i = 1;
+        // for(i = 1; i <= 7; i++){
+        //     document.writeln(x,"<br>");
+        //     if(i % 2 == 1){
+        //         x = x * 2;
+        //     }else{
+        //         x = x - 8;
+        //     }
+        // }
+
+        // do-while
+        // do{
+        //      document.writeln(x,"<br>");
+        //     if(i % 2 == 1){
+        //         x = x * 2;
+        //     }else{
+        //         x = x - 8;
+        //     }
+        //     i++;
+        // }while(i <= 7);
+
+        // while
+        while(i <= 7){
+             document.writeln(x,"<br>");
+            if(i % 2 == 1){
+                x = x * 2;
+            }else{
+                x = x - 8;
+            }
+            i++;
+        }
+    </script>
+</body>
+</html>

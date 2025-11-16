@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ind-bix Q.20:=>
+		// 28 25 5 21 18 5 14
+		// issme hme 28 pehle 28 start krenghe 
+		// issme 5 fixed h har 3 re number pe odd pe -3 krna h aur even pe -4 krna h 
+		// yeh program even odd se -3/-4 se nhi ho rhaa issme hmne count se hmne 
+		// count++ 
+		// Subtraction alternate pattern (-3, -4, -3, -4…) ke liye
+		// i ka odd-even kaam nahi karega, isliye hum count % 2 use karte hain.
+        // yeh count ++ daalne ka reason yeh ki -3,-4 pattern aur sequence pe chle 
+        // pehle -3 , -4 aye .
+
+        let x = 28;
+        let i = 1;
+        let count = 1;
+
+        for(i = 1; i <= 8; i++){
+            if(i % 3 == 0){
+                document.writeln(5,"<br>");
+            }else{
+                document.writeln(x,"<br>");
+                if(count % 2 == 1){
+                    x = x - 3;
+                }else{
+                    x = x - 4;
+                }
+                count++;
+            }
+        }
+    </script>
+</body>
+</html>

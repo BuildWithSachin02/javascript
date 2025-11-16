@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ind-bix Q.9:=>
+		// Look at this series: 8, 22, 8, 28, 8, ... What number should come next?
+		// issme 8 yeh repeat number h toh hum isse odd me repeat krenge aur even me +6 krenge
+        
+        // for loop
+        let x = 22;
+        let i = 1;
+        // for(i = 1; i <= 6; i++){
+        //     if(i % 2 == 1){
+		// 	    document.writeln(8,"<br>");
+		//     }else{
+		// 	    document.writeln(x,"<br>")
+		// 	    x = x + 6;	
+		//     }
+        // }
+
+        // do-while
+        // do{
+        //     if(i % 2 == 1){
+		// 	    document.writeln(8,"<br>");
+		//     }else{
+		// 	    document.writeln(x,"<br>")
+		// 	    x = x + 6;	
+		//     }
+        //     i++;
+        // }while(i <= 6);
+
+        // while`
+        while(i <= 6){
+            if(i % 2 == 1){
+			    document.writeln(8,"<br>");
+		    }else{
+			    document.writeln(x,"<br>")
+			    x = x + 6;	
+		    }
+            i++;
+        }
+    </script>
+</body>
+</html>

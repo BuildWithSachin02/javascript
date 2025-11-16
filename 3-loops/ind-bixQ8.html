@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ind-bixs Q.8:=>
+		// Look at this series: 3, 4, 7, 8, 11, 12, ... What number should come next?
+	    // issme pehle +1 odd numbers pe  h fir +3 h even  number pe 	
+
+        // for loop
+        let x = 3;
+        let i = 1;
+        // for(i = 1; i <= 7; i++){
+        //     document.writeln(x,"<br>");
+        //     if(i % 2 == 1){
+        //         x = x + 1;
+        //     }else{
+        //         x = x + 3;
+        //     }
+        // }
+
+        // do-while
+        // do{
+        //      document.writeln(x,"<br>");
+        //     if(i % 2 == 1){
+        //         x = x + 1;
+        //     }else{
+        //         x = x + 3;
+        //     }
+        //     i++;
+        // }while(i <= 7);
+
+        // while
+        while(i <= 7){
+             document.writeln(x,"<br>");
+            if(i % 2 == 1){
+                x = x + 1;
+            }else{
+                x = x + 3;
+            }
+            i++;
+        }
+    </script>
+</body>
+</html>

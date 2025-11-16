@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ind-bixs : Q.11 =>
+	    // Look at this series: 1.5, 2.3, 3.1, 3.9, ... What number should come next?
+	    // issme hm yeh krenge ki  1.5-2.3 = 0.8, 2.3-3.1 = 0.8, ?
+	    // issme each number +0.8 se hm plus krnge 
+
+        // for loop
+        let x = 1.5;
+        let i = 1;
+        // for( i= 1; i <= 5; i++){
+        //      document.writeln(x.toFixed9(1),"<br>");
+        //     if(i % 2 == 1){
+        //         x = x + 0.8;
+        //     }else{
+        //         x = x + 0.8;
+        //     }
+        // }
+
+        // do-while
+        // do{
+        //      document.writeln(x.toFixed(1),"<br>");
+        //     if(i % 2 == 1){
+        //         x = x + 0.8;
+        //     }else{
+        //         x = x + 0.8;
+        //     }
+        //     i++;
+        // }while(i <= 5);
+
+        // while
+        while(i <= 5){
+             document.writeln(x.toFixed(1),"<br>");
+            if(i % 2 == 1){
+                x = x + 0.8;
+            }else{
+                x = x + 0.8;
+            }
+            i++;
+        }
+    </script>
+</body>
+</html>

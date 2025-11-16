@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ind-bix Q.5 :=>
+	//    5. Look at this series: 53, 53, 40, 40, 27, 27, ... What number should come next?
+	//    x = x - 13; issme repet number kese ayegaa
+
+    // for loop
+    let x = 53;
+    let i = 1;
+        // for(i = 1; i <= 7; i++){
+        //     document.writeln(x,"<br>")
+        //     if(i % 2 == 0){
+        //         x = x - 13;
+        //     }
+        // }
+
+        // do-while
+        // do{
+        //     document.writeln(x,"<br>")
+        //     if(i % 2 == 0){
+        //         x = x - 13;
+        //     }
+        //     i++;
+        // }while(i <= 7);
+
+        // while loop 
+        while(i <= 7){
+            document.writeln(x,"<br>");
+            if(i % 2 == 0){
+                x = x - 13;
+            }
+            i++;
+        }
+    </script>
+</body>
+</html>
