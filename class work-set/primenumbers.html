@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // wap to check given numbers is prime or not by using function.
+        // prime means esa number jo khud number ho apne number se fully kaat jye jese ki 7 / 7
+        // ese number ko prime number bolte h 
+        //Prime number wo hota hai jise sirf 2 baar perfect divide milta hai:
+        let num = 100;
+        let count = 0;
+        // prime check krne ke liye hme loop chlna hoga 
+        for(i = 1; i <= num; i++){
+            if(num % i === 0){
+                count++;
+            }
+        }
+        if(count === 2){
+            document.writeln("this is prime number " + num);
+        }else{
+            document.writeln("this is not prime numbers " + num);
+        }
+    </script>
+</body>
+</html>

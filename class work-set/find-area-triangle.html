@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // wap to create a functions to find area of triangle.  
+        // triangle ke 2 side ka hmne abhi nikal a,b
+
+    //    function triangle(base,height){
+    //     return 0.5*base*height;
+    //    }
+    //    let base = 10;
+    //    let height = 20;
+    //    let result = triangle(base,height);
+    //    document.writeln("area of triangle " + result);
+    
+    // 3 side ke triangle ke area ko find krenge hum 
+    function triangle(a,b,c){
+        let s = (a+b+c)/2;
+        let area = Math.sqrt(s*(s-a)*(s-b)*(s-c)); // yeh area ka formulla h 
+        return area; // math.sqrt ka mtlb root of square h jab root ko square ke bahar niklate h tab uska exact match nikal naa hota jise iska 
+    }
+        let a = 10, b = 15, c = 20;
+        let result = triangle(a,b,c);
+        document.writeln("area of triangle " + result);
+    // issme s ki value = 22.5 aya h 
+    // area = 5273.1 abhi root ke ander h isko baahr niakal ne ke liye hme math.sqrt usse krenge
+    // abb root ko bahahr nikalne ke liye hmme uuse ek perfect match se nikalna hoga jese ki 
+    // agr hmra area = 36 aata toh area ka real value 6 hota 
+    // vese hii iska bhi nikal naa 72.62*72.62 multiply karo toh real value ayegi h iski 
+    </script>
+</body>
+</html>
