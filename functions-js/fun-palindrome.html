@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // wap to check number is palindrome or not.
+        // palindrome number mtlb ki esa number jo jise ulta bhi kre voh same number ho jaye
+        // jese ki 121 is palindrome numbers aur 101 aur 145 yeh palindrome number nhi h 
+
+        function palindrome(n){
+            // let digit;
+            let reverse = 0;
+            let original = n;
+                while(n>0){
+                    let digit = n % 10;
+                    reverse = reverse * 10 + digit;
+                    n = Math.floor(n / 10); // yeh loop chlne mtlb yeh ki jab num equal yaa 0 ayega tab yeh loop rukega
+                }
+                if(original === reverse){
+                    document.writeln(num + " number is palindrome.");
+                }else{
+                    document.writeln(num + " number is not palindrome.");
+                }
+                // return palindrome; yeh mujhe call krne ki koi jarurat h qki mne pehle hii print kr diya h isliye
+        }
+        let num = 50505;
+        let result = palindrome(num);
+
+    </script>
+</body>
+</html>
