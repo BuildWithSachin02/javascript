@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // wap to check number is armstrong or not :=>
+        //     armstrong => Har digit ka cube (³) karke sabko add karo →
+        //     Agar result original number ke equal ho,
+        //     toh woh Armstrong Number hai.
+        //     jese ki  ex:153 iska hum abb cube nikalenge 
+        //     1*3 = 1,+ 5*3(5*5*5)= 125 + 3*3*3 = 1+125+27 = 153 armstrong numbers h 
+        // iss hmne need h num aur sum = 0 krna hoga isko sum ko num ander store krnege 
+        // num,sum,digit,original
+
+        let num = 153;
+        let sum = 0;
+        let original = num;
+
+        // while(num>0){
+        //     let digit = num % 10;
+        //     sum = sum + (digit*digit*digit);
+        //     num = Math.floor(num / 10);
+        // }
+        // if(sum === original){
+        //     document.writeln(original + " is armstrong");
+        // }else{
+        //     document.writeln(original + " is not armstrong");
+        // }
+
+        // for(; num>0;){
+        //     let digit = num % 10;
+        //     sum = sum + (digit*digit*digit);
+        //     num = Math.floor(num / 10);
+        // }
+        // if(sum === original){
+        //     document.writeln(original + " is armstrong");
+        // }else{
+        //     document.writeln(original + " is not armstrong");
+        // }
+
+
+        do{
+            let digit = num % 10;
+            sum = sum + (digit*digit*digit);
+            num = Math.floor(num / 10);
+        }while(num>0);
+        if(sum === original){
+            document.writeln(original + " is armstrong");
+        }else{
+            document.writeln(original + " is not armstrong");
+        }
+    </script>
+</body>
+</html>

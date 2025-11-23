@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // WAP to reverse a number using while loop, do…while loop, for loop.
+        // let i = 1;
+        let rev = 0;
+        let n = 123;
+        let real = n;
+            // while(n>0){
+            //     let digit = n % 10;
+            //     rev = rev*10+digit;
+            //     n = Math.floor(n/10);
+            // }
+            // document.writeln(real + " reversed " + " = "  + rev);
+
+            // for(; n>0;){ // isme for loop me return me mujhe 32 return ka rhaa h hme for kr ander n>0 dena hoga 
+            //     let digit = n % 10;
+            //     rev = rev*10+digit;
+            //     n = Math.floor(n/10);
+            // }
+            // document.writeln(real + " reversed " + " = "  + rev);
+
+            do{
+                let digit = n % 10;
+                rev = rev*10+digit;
+                n = Math.floor(n/10);
+                // i++;
+            }while(n>0);
+            document.writeln(real + " reversed " + " = "  + rev);
+    </script>
+</body>
+</html>

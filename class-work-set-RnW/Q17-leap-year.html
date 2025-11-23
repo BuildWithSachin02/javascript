@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // WAP to print all leap years between a start and end year using while loop, do…while loop, for loop.
+
+        //  leap year  we are counting on 4,100,400years.
+            // Year = 2000
+            //     2000 % 4 == 0 
+            //     2000 % 100 == 0 
+            //     2000 % 400 == 0 
+            //     // => Leap Year 
+                    
+            //     Year = 1900
+            //     1900 % 4 == 0 
+            //     1900 % 100 == 0 
+            //     1900 % 400 == 300 
+                // => Not Leap Year 
+                //     issme sidha h ki jo year 4 se divide hoke zero aata h voh lear year h same 400 me bhi esa hii h aurr 100 century wle 
+                //     me pehla condition 4 se divide = 0, year%100 = 12.22(etc), year/400 = 0; true qki voh leap year h 
+                //     100 centure wle me condition alg h jese year 2000 me 3 condition true h isli boh lesp year h.
+
+        const starting = 100;
+        const ending = 500;
+        let i = 1;
+            // for(i=100;i<=500;i++){
+            //     if(i % 4 == 0 && i % 100 != 0 || (i % 400 == 0)){
+            //         document.writeln(i);
+            //     }
+            // }
+
+            // do{
+            //     if(i % 4 == 0 && i % 100 != 0 || (i % 400 == 0)){
+            //         document.writeln(i + "<br>");
+            //     }
+            //     i++;
+            // }while(i<=ending);
+
+            while(i <= ending){
+                if(i % 4 == 0 && i % 100 != 0 || (i % 400 == 0)){
+                    document.writeln(i + "<br>");
+                }
+                i++;
+            }
+    </script>
+</body>
+</html>

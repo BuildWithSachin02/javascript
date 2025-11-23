@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // wap to check numbers is palidrome or not
+        // iss program me palindrome check krna h means ex.121 isko reverse krne ke baad 
+        // bhi 121 ayega ese numbers ko hum palindrome numbers bolte h 
+        // abb hme ese program bna hoga jise find kre ki yeh number palidrome h ki nhi
+        // iss hme jarurat padegi 
+        // original number iske ander hum num store krenge qki hmra number safe rhe taki last 
+        // hme usse  ke sath comapire krna h qki loop me numbers change hota rehta h isliye
+        // aurr issme hme need a digit variable aur reverse variable jise numbers
+        // ke baad reverse hone baad compaire kr ske ori=reverse ke sath.
+        // Jab decimal aa jata hai → used math.floor(xyz);
+        // loop kabhi sahi reverse number nahi banata,
+        // isliye output "not palindrome" aa raha hai.  
+
+        let num = 121;
+        let original = num;
+        // let digit;
+        let reverse = 0;
+        
+            // while(num>0){
+            //     let digit = num % 10;
+            //     reverse = reverse*10+ digit;
+            //     num = Math.floor(num / 10); // math me M capital rhega imp.(decimal hatne ke liye use kiya agr 1.23 yesa ayeha toh hmre loop nhi chlegaa isliye else me is not aa rha h toh usse solve krnne ke liye hme Math.floor usse krna h padega)
+            // }
+            // if(original === reverse){
+            //     document.writeln(original + "this is palindrome number");
+            // }else{
+            //     document.writeln(original + "this is not palindrome.");
+            // }
+
+            // do{
+            //      let digit = num % 10;
+            //     reverse = reverse*10+ digit;
+            //     num = Math.floor(num / 10);
+            // }while(num>0);
+
+            // if(original === reverse){
+            //     document.writeln(original + "this is palindrome number");
+            // }else{
+            //     document.writeln(original + "this is not palindrome.");
+            // }
+
+            for(; num>0;){
+                let digit = num % 10;
+                reverse = reverse*10 + digit;
+                num = Math.floor(num / 10);
+            }
+            if(original === reverse){
+                document.writeln(original + "this is palindrome number");
+            }else{
+                document.writeln(original + "this is not palindrome.");
+            }
+
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // WAP to check whether a number is Magic Number or not using while loop, do…while loop, for loop.
+        /* n = 1729
+        1 + 7 + 2 + 9 = 19  
+        1 + 9 = 10  
+        1 + 0 = 1  ✅
+        last sum krne ke baad hme 1 mila it means magic number
+        */
+        // let num = 1729;
+        // let original = num;
+
+        // while (num > 9) {
+        //     let sum = 0;
+        
+        //     while (num > 0) {
+        //         sum += num % 10;
+        //         num = Math.floor(num / 10);
+        //     }
+        
+        //     num = sum;
+        // }
+
+        // if (num === 1) {
+        //     document.writeln(original + " is a Magic Number");
+        // } else {
+        //     document.writeln(original + " is NOT a Magic Number");
+        // }
+
+        // let num = 1729;
+        // let original = num;
+
+        // do {
+        //     let sum = 0;
+        //     let temp = num;
+        
+        //     do {
+        //         sum += temp % 10;
+        //         temp = Math.floor(temp / 10);
+        //     } while (temp > 0);
+        
+        //     num = sum;
+        
+        // } while (num > 9);
+
+        // if (num === 1) {
+        //     document.writeln(original + " is a Magic Number");
+        // } else {
+        //     document.writeln(original + " is NOT a Magic Number");
+        // }
+
+
+        let num = 1729;
+let original = num;
+
+for (; num > 9; ) {
+    let sum = 0;
+
+    for (let temp = num; temp > 0; temp = Math.floor(temp / 10)) {
+        sum += temp % 10;
+    }
+
+    num = sum;
+}
+
+if (num === 1) {
+    document.writeln(original + " is a Magic Number");
+} else {
+    document.writeln(original + " is NOT a Magic Number");
+}
+
+
+    </script>
+</body>
+</html>
