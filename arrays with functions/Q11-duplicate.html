@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //11.Write a function that takes an array and returns a new array without duplicate values.
+        function duplicateArray(n){
+           let result = [];// isse khali rkhna h hme qki issme new array add krenge hum
+           for(let i=0; i<n.length; i++){// i wali loop jise hum chleyenge
+            // let value = n[i];
+            let exits = false;// new variable bnaya h hmne  q bnaya hmne qki hme new array add krwana h toh yeh true false rkhana hoga jise jab true hoga toh add kro nhi toh skip krdo
+            for(let j=0; j<result.length; j++){// j wali loop chlyenge qki new array ke liye ussem hme add krwan h hme
+                if(result[j]===n[i]){// yeh condison bol rhaa ki agr new array ki j wali loop aur i wali loop same same h toh condison true hogui exits ki
+                    exits = true; /// true kr diya hmne isse q kiya isliye kiya hmne old array aur new array value same h toh h isliye 
+                    break;// agr hme old aur new mil jaye toh loop break krdo j wali 
+                }
+               
+            }
+             if(!exits){// yeh mian h heart core h logic h abb mujhe dekhna h  ki jab old=new array same value same toh mil jaye toh abb usse mujhe push krwana h new array but main logic yeh agr me issme ! is not exits ho condion me hme duplicate value ko add nhi krwana h issme new array me issme jab hum i aur loop chlta h tab hme j wali loop chlegaa j ke sath tab usse me hmne bola h ki dono same ho jaate h toh toh new array me add krdo agr same value h toh uuse skip krdo usse 
+                   result.push(n[i]);         
+                }
+           }
+           return result;
+        }
+        let num = [1,1,2,2,3,3,4,5,5,6,7,7];
+        let result = duplicateArray(num);
+        document.writeln(result);
+        /*
+         newarray = [1]
+            yeh sse hum dry run krte h isse old array num kaa h issme hmne i wali loop me jaata 
+            n = [0]= 1;
+            exits = false ; new variable yeh check kregaa ki true h toh add kro nhi toh skip krdo 
+            abb hum niche aate j wali loop me 
+            j<newarray.length , me voh kahli thik abb usme result = []; khali array abb issme 
+            issme i wali j wali 
+            i= 0[1]  =(i ki value hmne j wlae loop ke ander hmne ddaal diya h )  j=0 [1] abb issme if aate huye exits krata h abb hum usse break krnge abb if(!exits not) toh 
+            is not exits jise hum yeh vol rhe ki false condion bta rhaa h issme pehle hum new array me  1 ko add kiaya abb new loop new cycle 
+            abb cycle 2.
+            abb issme hum i se start hogaa 
+            i = i = 1 index value abb = i[1] niche jyenge j wali loop me 
+            i = j  condion true hoogi abb
+            abb hum inn jyenge if(!exits is not )
+            but hmne bola ki agr same value ho toh not add only accept new array value toh 
+            new array me hmne dekha ki
+            newarray = [1,1] = 1,1 same h toh hmne bol KI ! not add same add same value aur toh condion false 1 skip hogaa 
+            ese hii cycle chelgaa 
+        */
+    </script>
+</body>
+</html>

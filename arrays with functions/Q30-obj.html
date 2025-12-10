@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create a function that calculates total quantity of all items in a shopping cart array.
+function totalQuantity(cart) {
+    let total = 0;
+
+    for (let i = 0; i < cart.length; i++) {
+        total = total + cart[i].quantity;
+    }
+
+    return total;
+}
+const cart = [
+    { item: "Apple", quantity: 2 },
+    { item: "Banana", quantity: 5 },
+    { item: "Orange", quantity: 3 }
+];
+console.log(totalQuantity(cart));
+    </script>
+</body>
+</html>

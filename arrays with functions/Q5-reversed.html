@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //5.Write a function that takes an array and returns a new array in reversed order.
+
+        function rev(n){
+                let rev = [];//abb mujhe new array lena hoga but issme kuch nhi hoga aur yeh khali h baad hum issme reverse array daalenge aur push ke help se 
+                for(let i=n.length; i>=0; i--){// abb hum ulta array yaa loop chlyenge jise old wle me array me jo index-position me jo value hogi usse hum .push ki madat se hum usse new array me daalenge 
+                        rev.push(n[i]);//rev yeh new array h .push se hum uss arrya me add krnege with reverse jo loop se hua 
+                }
+            return rev;
+        }
+        let num = [1,2,3,4,5];
+        let result = rev(num);
+        document.writeln([result]);
+    </script>
+</body>
+</html>

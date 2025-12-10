@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //15.Write a function that counts how many times each element appears in an array.
+        function CountElement(n){
+            let freq = {}; // object hum lenge qki iski array nhi le skte qki hum index position nhi lena hme element kitni baar aarha h usse count krnaa isliye hmne object liya h 
+            for(let i=0; i<n.length; i++){
+                let value = n[i]; // value naam kaa variable liya h usske under hmne i ka store kr diya h 
+                if(freq[value] === undefined){ // agr freq ki value === undefined(ka mtbl in js in bulit key h mtlb is value ko register nhi kiya gya h)
+                    freq[value] = 1;// jab mile 2:1(2 array me 1 hii baar aa rhaa isliye hmne =1 bola h )
+                }else{
+                    freq[value]++; // rejister kiye huye value ko count krega agr ek value fir aa rhaa usse count kro 
+                }
+            }
+            return freq;
+        }
+        let num = [1,1,2,2,3,5];
+        let result = CountElement(num);
+        document.writeln(JSON.stringify(result));// yeh dena jaruri h qki hmne file yeh index.html me script kr rhe h isliye ke liye hme seperate xyz.json file bna hoga 
+        /*
+           step 1. freq = {ek khali object liya hmne}
+           freq = {}
+           step.2 i=0=>1, i<1=>1<6=>true
+           step.3 new variablr hmne value = n[i] ko store kr diya 
+           step.4 freq[value]===undefined, freq[1]===undefined
+           step.5 freq[value]= 1, freq[1]
+           step.6 hmne bola freq[value]++ bola usse 
+           abb firese wahi same cycle chlegaa new value 
+           step.1 i++ = n[1]=1,
+           2. 1<6=true
+           3. value = n[1];
+           4.freq[1]===undefined
+           5.abb freq[1];
+           6. abb object me => freq = {1,} ek toh pehle add kiya hmne 
+           7. else wla part chlegaa isliye hmne freq[value]++ kiya h toh 1 same value wapish aya toh value++ hoga 
+           freq = {1:2,abb ese hii cycle chhelegaa}  
+        */
+    </script>
+</body>
+</html>

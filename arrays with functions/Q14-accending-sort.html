@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //14.Write a function that sorts an array in ascending order without using .sort().
+        /*
+            i[0] = 5 abb niche jayenge hum outper loop yeh student h j ke sath compaire krenge hum i ko
+            abb 5 ko compaire with j = i+1 => 0+1 = 1 => j[1=4]
+            4<5 = yes condion true hogi toh abb hmra array 
+            num = [4,5,3,2,1];
+            abb hum 5 ko firse compire krenge qki condison break nhi hua h abhi
+            i+1(1+1 = 2)j[3]
+            3<5 = true 
+            [4,3,5,2,1]
+            same ese hii 5 compaire with 2
+            [4,3,2,5,1]
+            same 5, 1
+            [4,3,2,1,5] yeh pe hmne 5 ke sath compaire kr liye loop yeh pe complete hua abb 4 ke sath compaire 
+            4<3 = 3
+            [3,4,2,1,5]
+            4<2  = 2
+            yeh ese loop chlta jayegaa  
+        */
+        function AscendingSort(n){
+            for(let i=0; i<n.length; i++){// outer loop ek value ko uthyaga mtlb ek class me kitne chote bache h usse agge wle bench pe bethana h hme 
+                for(let j=i+1; j<n.length; j++){
+                    if(n[j]<n[i]){
+                        let temp = n[i]; // swap rule yeh isse hum mere pss 2 pani ke bottel h abb mujhe yeh check krna h ki kisme sabse kum pani h 
+                         n[i] = n[j];// toh mene usse ke liye yeh check krrne ke liye mujhe ek new pani ki bottele chhiye ussemen temp ka bottle liya 
+                         n[j] = temp;// abb mere a naam ka bottle aur b naam bottle h aur temp ka khali boolte h abb mene temp ke ander mene a bottle ka pani daal diya aur
+                
+                    }
+                }
+            }
+            return n;
+        }
+        let num = [5,4,3,2,1];
+        let result = AscendingSort(num);
+        document.writeln(result);
+    </script>
+</body>
+</html>

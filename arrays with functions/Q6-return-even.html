@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //6.Write a function that takes an array and returns only even numbers in a new array.
+
+        function evenarray(n){
+            let NewEvenArray = [];
+            for(let i=0; i<n.length; i++){
+                if(n[i] % 2 === 0){
+                    NewEvenArray.push(n[i]);
+                }
+            }
+            return NewEvenArray;
+        }
+        let num = [1,2,3,4,5,6];
+        let result = evenarray(num);
+        document.writeln(result);
+    </script>
+</body>
+</html>

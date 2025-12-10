@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //13.Write a function that takes an array and returns the product of all elements.
+        // pehle yeh smjo ki product element mtlb kyy hota iska mtlb h ki multiplcation hotaa 
+        function productElement(n){
+            let product = 1;// 1 q liya aggr hum 0 lelete toh 0*1 = 0 ho jata isliye 
+            for(let i=0; i<n.length; i++){
+                product = product*n[i];//1*2*3*4*5 = 120; if hum product = 0 hota toh => 0*1=0,0*2=0 yeh chlta hii nhi
+            }
+            return product;
+        }
+        let num = [1,2,3,4,5];
+        let result = productElement(num);
+        document.writeln(result);
+    </script>
+</body>
+</html>

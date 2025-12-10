@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //8.Write a function that takes an array and counts how many positive numbers are present.
+
+        function PositiveArray(n){
+            let count = 0;
+            for(let i=0; i<n.length; i++){
+                if(n[i] > 0){
+                    count++;
+                }
+            }
+            return count;
+        }
+        let num = [1,2,-3,-4,5];
+        let result = PositiveArray(num);
+        document.writeln(result);
+    </script>
+</body>
+</html>

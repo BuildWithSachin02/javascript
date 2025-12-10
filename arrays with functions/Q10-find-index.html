@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //10.Write a function that takes an array and returns the index of a given element.
+
+        function Findindex(n,target){
+            // let search = 1;
+            for(let i=0; i<n.length; i++){// i<4= 1<4,2<4,3<4,4<4
+                if(n[i]===target){// 1 != 20 no match !, 2<4 loop stop, 3 = 5 !, 4=4 true.
+                    return i;// toph return kiya hmne i = kyy btaata h index position 
+                }
+            }
+            return -1; // its means not found
+        }
+        let num = [1,2,3,4,5];
+        let result = Findindex(num,5);// hme pehle target dediya h target=5 abb check krna h ki kis index pe h yeh
+        document.writeln(result);
+    </script>
+</body>
+</html>

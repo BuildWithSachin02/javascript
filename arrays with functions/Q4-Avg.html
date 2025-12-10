@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //4.Write a function that takes an array and returns the average of all numbers.
+
+        function avg(n){
+            let total = 0;
+            for(let i=0; i<n.length; i++){
+                total = total + n[i];
+            }
+            let avg = total/n.length;
+            return avg;
+        }
+        let num = [10,20,15];
+        let result = avg(num);
+        document.writeln(result);
+    </script>
+</body>
+</html>

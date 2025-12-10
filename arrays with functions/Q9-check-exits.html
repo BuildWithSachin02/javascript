@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //9.Write a function that takes an array and checks if a given element exists or not.
+
+        function Exitsarray(n, target){// target hum issme check krenge ki voh exits h ki nhi 
+            for(let i=0; i<n.length; i++){// yeh loop chli jo hmne array bnyah num kaa 
+                if(n[i] === target){// agr i=target same h toh usse hme true print krwna h 
+                    return true; 
+                }
+            }
+            return false;
+        }
+        let num = [1,3,4,5,7];
+        let result = Exitsarray(num);
+        document.writeln(Exitsarray(num,3));
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //2.Write a function that takes an array and returns the maximum element.
+
+        function maximum(n){
+            let max = n[0];//abb hum 0 index position pe hmne pehle hii max maan liya h max = 14
+            for(let i=1; i<n.length; i++){// loop chlegaa issme 
+                if(n[i]> max){// 25>10=25(max) fir abb fir hmm uper jyenge next index position pe 
+                    max = n[i];// max = 25 new 
+                }
+            }
+            return max;
+        }
+
+        let num = [14,25,345,478,155];  
+        let result = maximum(num);
+        document.writeln(result);
+    </script>
+</body>
+</html>

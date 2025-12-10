@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //12.Write a function that merges two arrays and returns a single array.
+
+        // function SingleArray(a,b){
+        //     let MergeArray = [];
+        //     // let exits = false;
+        //     for(let i=0; i<a.length; i++){
+        //         MergeArray.push(a[i]);
+        //     }
+        //     for(let j=0; j<b.length; j++){
+        //         MergeArray.push(b[j]);
+        //     }
+        //     return MergeArray;
+
+        // }
+         // none duplicate array and merge two array in one array
+         function MergeArray(a,b){
+            let newarray = [];
+            
+           for(let i=0; i<a.length; i++){
+            newarray.push(a[i]);
+           }
+           for(let j=0; j<b.length; j++){
+            let exits = false;
+            for(let k=0; k<newarray.length; k++){
+                if(newarray[k]===b[j]){
+                    exits  = true;
+                    break;
+                }
+            }
+             if(!exits){
+                newarray.push(b[j]);
+           }
+           }
+           
+            return newarray;
+         }
+        let a = [1,2,3,4,5];
+        let b = [5,6,7,8,9];
+        let result = MergeArray(a,b);
+        document.writeln(result);
+        /*
+         issme hmne pass 2 aaray h abb mujhe issmese koi bhi samwe value nhi chhiye abb hmne 
+         pehle se a ko add krdiya newarray me qki iske new array ke comparison me same value ko campiar krenge hum 
+         fir hmne j = b loop chlya aur fir ek khali wla loop chlya jise hmne a ke arrya ko pehle se add krwaya aur 
+         k=j h thik abb hmne bola h ki if me (k=j)
+         aur true hoga but j ke loop me hmne if(!exits me hmne bola do not add same value)
+         isliye hmne koi same array value nhi dega. 
+        */
+    </script>
+</body>
+</html>

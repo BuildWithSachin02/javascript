@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //16.Write a function that takes an array and returns the second largest number.
+
+        function SecondLarge(n){
+           let largest = n[0];//1. n[0]=1
+           for(let i=1; i<n.length; i++){//2. 2<5=true =>2
+            if(n[i]>largest){//2>1(large ke under hmne 0 = 1)yes true h condition 
+                largest = n[i];// large = 2 firse uper jyenge hum same abb i++ hoga i=2,3<5= true niche jao 3>2 true , large =3
+            }// toh hmne ese hii krte krte hme 5 larest number milega 
+            /*
+                Infinity koi number nahi hota —
+                woh placeholder hota hai jo guarantee deta hai ki
+                koi bhi value aate hi replace ho jayegi.
+            */
+           }
+           /*
+                -Infinity isliye liya gaya hai kyunki yeh JavaScript me sabse chhota possible numeric value hai — matlab koi bhi real number isse bada hoga. Isliye first valid candidate turant secondlg ban jayega.
+                Agar tum Infinity use karoge to kabhi bhi n[i] > secondlg true nahi hoga (koi number Infinity se bada nahi hota) — to secondlg update hi nahi hoga.
+                Aise hi 0 ya -100000 rakhne se galat ho sakta hai jab array me usse chhote negative numbers ho.
+           */
+           let secondlg = -Infinity; // infinity isliye qki agr 0 lete   wahi same value ke sath boh compaire krta aur toh infinity koi number ke sath compaire kregaa 
+           for(let i=0; i<n.length; i++){//0=1,1<5=1,
+            if(n[i]!==largest && n[i]> secondlg){//1!==5 && 1>secondlg
+                secondlg = n[i];
+            }
+           }
+           /*
+           i | n[i] | n[i] !== largest? | n[i] > secondlg? | action -> secondlg after
+           -----------------------------------------------------------------------
+           0 |  1   |  1 !== 5  => true   | 1 > -Infinity => true  | set secondlg = 1
+           1 |  2   |  2 !== 5  => true   | 2 > 1        => true  | set secondlg = 2
+           2 |  3   |  3 !== 5  => true   | 3 > 2        => true  | set secondlg = 3
+           3 |  4   |  4 !== 5  => true   | 4 > 3        => true  | set secondlg = 4
+           4 |  5   |  5 !== 5  => false  | (skipped)            | secondlg stays 4
+               
+           Result returned: 4
+           */
+           return secondlg;
+            
+        }
+        let num = [1,2,3,4,5];
+        let result = SecondLarge(num);
+        document.writeln(result);
+    </script>
+</body>
+</html>
