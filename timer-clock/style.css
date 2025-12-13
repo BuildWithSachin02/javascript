@@ -1,0 +1,67 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* TIMER DISPLAY */
+#display {
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+/* INPUT BOX */
+#input {
+    width: 280px;
+    padding: 12px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #000;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0,255,200,0.3);
+}
+
+/* BUTTON CONTAINER */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* COMMON BUTTON STYLE */
+.buttons button {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+/* BUTTON COLORS */
+#start {
+    background: #00ffaa;
+    color: #000;
+}
+#stop {
+    background: #ff4444;
+    color: white;
+}
+#reset {
+    background: #5a5a5a;
+    color: white;
+}
+
+/* BUTTON HOVER EFFECT */
