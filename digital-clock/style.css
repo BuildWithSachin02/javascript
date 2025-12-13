@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #7e8df1, #e4a1b3);
+  font-family: Arial, sans-serif;
+}
+
+.clock {
+  display: flex;
+  gap: 40px;
+  background: black;
+  padding: 30px 50px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+}
+
+.unit h2 {
+  font-size: 45px;
+  margin: 0;
+}
+
+.unit p {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 5px;
+}
