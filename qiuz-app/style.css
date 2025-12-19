@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 35px 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(0, 255, 153, 0.1);
+}
+
+.login-box h2 {
+    color: #00ff99;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    color: #ddd;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #1b1b1b;
+    color: white;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+    border: 1px solid #00ff99;
+    box-shadow: 0 0 8px rgba(0, 255, 153, 0.4);
+}
+
+.forgot {
+    display: block;
+    margin-top: -8px;
+    margin-bottom: 20px;
+    text-align: right;
+    color: #00ff99;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #00ff99;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #06e388;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 18px;
+    color: #bbb;
+}
+
+.signup-text a {
+    color: #00ff99;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+/* From Uiverse.io by nishal21 */ 
+.u-btn {
+  width: 140px;
+  height: 50px;
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family:
+    "Poppins",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Top face */
+.u-btn__top {
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 238);
+  font-size: 16px;
+  color: rgb(36, 38, 34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px; /* replaced mm with px for consistency */
+  outline: 2px solid rgb(36, 38, 34);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Bottom shadow/surface */
+.u-btn__bottom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(229, 229, 199);
+  top: 10px;
+  left: 0;
+  border-radius: 12px;
+  outline: 2px solid rgb(36, 38, 34);
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+/* small vertical posts on the base */
+.u-btn__bottom::before,
+.u-btn__bottom::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 9px;
+  background: rgb(36, 38, 34);
+  bottom: 0;
+}
+.u-btn__bottom::before {
+  left: 15%;
+}
+.u-btn__bottom::after {
+  left: 85%;
+}
+
+/* pressed state: move the top face down */
+.u-btn:active .u-btn__top {
+  transform: translateY(10px);
+}
+
+/* extra shading layer behind the base */
+.u-btn::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 2px);
+  height: 100%;
+  background: rgb(140, 140, 140);
+  top: 14px;
+  left: -1px;
+  border-radius: 12px;
+  outline: 2px solid rgb(36, 38, 34);
+  z-index: -2;
+}
+
+/* gloss on the top face */
+.u-btn__top::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  transform: skewX(30deg);
+  left: -20px;
+  transition: left 0.25s ease;
+  pointer-events: none;
+}
+
+/* animate gloss moving across when pressed */
+.u-btn:active .u-btn__top::before {
+  left: calc(100% + 20px);
+}
+
+/* keyboard-focus visible state for accessibility */
+.u-btn:focus-visible .u-btn__top {
+  box-shadow: 0 0 0 3px rgba(36, 38, 34, 0.12);
+  outline: none;
+}

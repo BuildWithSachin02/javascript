@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #667eea 0% 100%);
+    font-family: Arial, sans-serif;
+}
+
+.result-box {
+    width: 350px;
+    background: #ffffff;
+    margin: 80px auto;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.result-box h1 {
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.score span {
+    font-weight: bold;
+}
+
+.details p {
+    margin: 6px 0;
+}
+
+.status {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.pass {
+    background: #d4edda;
+    color: #155724;
+}
+
+.fail {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
