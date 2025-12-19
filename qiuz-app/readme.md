@@ -31,4 +31,5 @@ The application is designed to demonstrate **core JavaScript concepts** such as 
 ---
 
 ## 📂 Project Structure
+https://drive.google.com/file/d/1ELSCxGi5TCNIs9qKX8LQ7hzvLzCvezE7/view?usp=drive_link
 
