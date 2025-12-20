@@ -143,5 +143,7 @@ Sachin Yadav
 Web Developer (HTML, CSS, JavaScript, WordPress)
 
 📄 License
+** OUTPUT VIEW ***//
+https://drive.google.com/file/d/1gdIWe5Dl8tYZ3j1AUGhOtyDowfEVjmTB/view?usp=drive_link
 
 This project is open-source and free to use for learning and personal projects.
