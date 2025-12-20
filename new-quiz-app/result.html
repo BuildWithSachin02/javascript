@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+
+    <div class="result-container">
+        <div class="result-card">
+
+            <h1>Quiz Result</h1>
+            <p class="subtitle">Your Performance Summary</p>
+
+            <div class="score-circle">
+                <span id="final-score">0</span>
+                <small>/ <span id="total-questions"></span></small>
+            </div>
+
+            <div class="result-details">
+                <p>Total Questions: <strong id="total"></strong></p>
+                <p>Correct Answers: <strong id="correct"></strong></p>
+                <p>Wrong Answers: <strong id="wrong"></strong></p>
+                <p>Percentage: <strong id="percentage"></strong>%</p>
+            </div>
+
+            <div id="result-status" class="status"></div>
+
+            <div class="btn-group">
+                <button onclick="restartQuiz()">Retry Quiz</button>
+                <button onclick="goHome()">Home</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="result.js"></script>
+</body>
+</html>
