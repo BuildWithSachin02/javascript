@@ -101,3 +101,47 @@ body {
   color: #555;
   line-height: 1.5;
 }
+/* ============================= */
+/* NOTE CARD SCROLL FIX */
+/* ============================= */
+
+.note-card {
+  max-height: 220px;          /* Card ki fixed height */
+  overflow: hidden;           /* Bahar ka content hide */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title fix */
+.note-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  white-space: nowrap;        /* Title ek line me rahe */
+  overflow: hidden;
+  text-overflow: ellipsis;    /* ... aa jaye agar bada ho */
+}
+
+/* Description scroll inside card */
+.note-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  overflow-y: auto;        
+  padding-right: 5px;
+}
+
+/* Smooth scrollbar (Chrome, Edge) */
+.note-card p::-webkit-scrollbar {
+  width: 6px;
+}
+
+.note-card p::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+.note-card p::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
