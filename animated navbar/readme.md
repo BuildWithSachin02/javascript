@@ -78,3 +78,8 @@ Frontend / Full Stack Web Developer
 
 🔹 License
 This project is open-source and free to use for learning and personal projects.
+
+**OUTPUT VIEW**
+
+
+https://github.com/user-attachments/assets/351002a6-ba91-4860-97b7-bc24967b8e0c
