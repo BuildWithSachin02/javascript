@@ -1,0 +1,80 @@
+# Animated Navigation Menu
+
+This project demonstrates a clean and interactive **Animated Navigation Menu** built using **HTML, CSS, and JavaScript**.  
+The navigation bar smoothly expands and collapses with a rotating menu animation when the toggle button is clicked.
+
+---
+
+## 🔹 Features
+
+- Animated expandable navigation bar
+- Smooth width transition using CSS
+- Rotating menu items animation
+- Hamburger menu transforms into close icon
+- Responsive and modern UI
+- Pure HTML, CSS & JavaScript (no libraries)
+
+---
+
+## 🔹 Technologies Used
+
+- HTML5  
+- CSS3 (Transitions & Transforms)  
+- JavaScript (DOM Manipulation)
+
+---
+
+## 🔹 Project Structure
+
+📁 Animated-Navigation
+│
+├── index.html
+├── style.css
+└── script.js
+
+yaml
+Copy code
+
+---
+
+## 🔹 How It Works
+
+- Initially, the navigation bar is in a collapsed state.
+- Clicking the menu icon toggles the `active` class on the `<nav>` element.
+- CSS handles:
+  - Width expansion
+  - Menu item rotation
+  - Icon animation
+- JavaScript only controls class toggling for better performance.
+
+---
+
+## 🔹 JavaScript Logic
+
+```js
+const toggle = document.getElementById("toggle");
+const nav = document.getElementById("nav");
+
+toggle.addEventListener("click", () => nav.classList.toggle("active"));
+🔹 How to Use
+Download or clone this repository
+
+Open index.html in any modern browser
+
+Click on the menu icon to see the animation
+
+🔹 Future Improvements
+Add mobile responsiveness
+
+Add active link highlighting
+
+Convert to React / Vue component
+
+Add keyboard accessibility
+
+🔹 Author
+Sachin Yadav
+Frontend / Full Stack Web Developer
+
+🔹 License
+This project is open-source and free to use for learning and personal projects.
