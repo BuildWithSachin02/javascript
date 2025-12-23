@@ -1,165 +1,121 @@
-/* Style.css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #ffffff;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: "Inter", sans-serif;
 }
 
 .main {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    transition: transform 0.2s;
-    width: 600px;
-}
-
-.main:hover {
-    transform: scale(1.05);
+  width: 520px;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  color: #fff;
 }
 
 .gfg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 600;
-    color: #01940b;
-}
-
-.custom-wrapper {
-    margin: 0;
-    width: 70%;
-    padding: 0px 25px 40px;
-    position: relative;
-    left: 63px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  color: #00ff99;
+  margin-bottom: 10px;
 }
 
 .header h2 {
-    font-size: 30px;
-    color: #01940b;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-/* Styles for the price input container */
-.price-input-container {
-    width: 100%;
-}
-
-.price-input .price-field {
-    display: flex;
-    margin-bottom: 22px;
-}
-
-.price-field span {
-    margin-right: 10px;
-    margin-top: 6px;
-    font-size: 17px;
-}
-
-.price-field input {
-    flex: 1;
-    height: 35px;
-    font-size: 15px;
-    font-family: "DM Sans", sans-serif;
-    border-radius: 9px;
-    text-align: center;
-    border: 0px;
-    background: #e4e4e4;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
 }
 
 .price-input {
-    width: 100%;
-    font-size: 19px;
-    color: #555;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
 }
 
-/* Remove Arrows/Spinners */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.price-field {
+  flex: 1;
+}
+
+.price-field span {
+  display: block;
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+
+.price-field input {
+  width: 100%;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
 
 .slider {
-    width: 100%;
-}
-
-.slider {
-    height: 6px;
-    position: relative;
-    background: #e4e4e4;
-    border-radius: 5px;
+  position: relative;
+  height: 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .slider .price-slider {
-    height: 100%;
-    left: 25%;
-    right: 15%;
-    position: absolute;
-    border-radius: 5px;
-    background: #01940b;
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(90deg, #00ff99, #00c9ff);
+  border-radius: 6px;
 }
 
 .range-input {
-    position: relative;
+  position: relative;
+  margin-top: -8px;
 }
 
 .range-input input {
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    background: none;
-    top: -5px;
-    pointer-events: none;
-    cursor: pointer;
-    -webkit-appearance: none;
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
 }
 
-/* Styles for the range thumb in WebKit browsers */
 input[type="range"]::-webkit-slider-thumb {
-    height: 18px;
-    width: 18px;
-    border-radius: 70%;
-    background: #555;
-    pointer-events: auto;
-    -webkit-appearance: none;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid #00ff99;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
-@media screen and (max-width: 768px) {
-    .main {
-        width: 80%;
-        margin-right: 5px;
-    }
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
 
-    .custom-wrapper {
-        width: 100%;
-        left: 0;
-        padding: 0 10px;
-    }
-
-    .projtitle {
-        width: 100%;
-        position: relative;
-        right: 26px;
-    }
-
-    .price-input {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .price-field {
-        margin-bottom: 10px;
-    }
+.range-text {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #e0e0e0;
 }
