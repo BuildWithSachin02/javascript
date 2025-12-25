@@ -32,18 +32,20 @@ AddNotes_btn.addEventListener("click", ()=> {
 
     // editIndex ko upar global banaya hota hai
     // let editIndex = null;
-    
+
     if (editIndex === null) {
       // NEW NOTE
       notes.push(notesObj);
+    //   AddNotes_btn.innerText = "Add notes";
     } else {
       //  EDIT NOTE
       notes[editIndex] = notesObj;
       editIndex = null; // edit mode off
+      AddNotes_btn.innerText = "Add notes";
     }
 
     //abb mujhe add krwna h kisme notes ke array aur kyy add krwana h mujhe jo mene object bnya h humne usemujhe abb notes array me .push krwna h
-    notes.push(notesObj);
+    // notes.push(notesObj);
     SaveToTheLocalStorage();
     Startnotes();
     //abb mene add krwa diya iske sath hii mujhe yeh bhi krna hoga jab bhi user kuch add kre toh usse ek fresh start mile uske liye mujhe title aur description box ko khali rkhwana padega 
@@ -80,7 +82,9 @@ function editNote(index){
     title_Input.value = notes[index].title;
     des_Input.value = notes[index].description;
     editIndex = index;
+    AddNotes_btn.textContent = "Update notes";
 }
+
 function SaveToTheLocalStorage(){
     localStorage.setItem("notes",JSON.stringify(notes));
 }
