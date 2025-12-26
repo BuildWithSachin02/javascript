@@ -1,45 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advanced Price Range Slider</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Price Range Slider</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="main">
-    <div class="gfg">Price Filter</div>
-
+  <div class="container">
     <div class="header">
-      <h2 class="projtitle">Select Your Budget</h2>
+      <h2>Select Your Budget</h2>
+      <p class="subtitle">Find products within your price range</p>
     </div>
-
-    <div class="price-input">
-      <div class="price-field">
-        <span>₹ Minimum Price</span>
-        <input type="number" class="min-input" value="2500">
+    
+    <div class="price-display">
+      <div class="price-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="price-info">
+          <span class="label">Minimum</span>
+          <span class="amount">₹<span id="minDisplay">2000</span></span>
+        </div>
       </div>
-
-      <div class="price-field">
-        <span>₹ Maximum Price</span>
-        <input type="number" class="max-input" value="8500">
+      <div class="divider"></div>
+      <div class="price-card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="price-info">
+          <span class="label">Maximum</span>
+          <span class="amount">₹<span id="maxDisplay">8000</span></span>
+        </div>
       </div>
     </div>
 
-    <div class="slider">
-      <div class="price-slider"></div>
+    <div class="slider-wrapper">
+      <div class="slider-container">
+        <div class="slider-track"></div>
+        <div class="slider-range" id="sliderRange"></div>
+        <input type="range" id="minRange" min="0" max="10000" value="2000" step="100">
+        <input type="range" id="maxRange" min="0" max="10000" value="8000" step="100">
+      </div>
+      <div class="scale">
+        <span>₹0</span>
+        <span>₹5k</span>
+        <span>₹10k</span>
+      </div>
     </div>
 
-    <div class="range-input">
-      <input type="range" class="min-range" min="0" max="10000" value="2500" step="1">
-      <input type="range" class="max-range" min="0" max="10000" value="8500" step="1">
+    <div class="inputs-row">
+      <div class="input-box">
+        <label for="minInput">Minimum Price</label>
+        <div class="input-wrapper">
+          <span class="currency">₹</span>
+          <input type="number" id="minInput" value="2000" min="0" max="10000" step="100">
+        </div>
+      </div>
+      <div class="input-box">
+        <label for="maxInput">Maximum Price</label>
+        <div class="input-wrapper">
+          <span class="currency">₹</span>
+          <input type="number" id="maxInput" value="8000" min="0" max="10000" step="100">
+        </div>
+      </div>
     </div>
 
-    <p class="range-text">
-      Selected Range: ₹<span id="minVal">2500</span> – ₹<span id="maxVal">8500</span>
-    </p>
-
+    <button class="apply-btn">
+      <span>Apply Filter</span>
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
   </div>
 
   <script src="script.js"></script>
