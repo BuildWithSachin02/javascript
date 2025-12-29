@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Name - ShopEasy | Premium E-commerce Store</title>
+    <link rel="stylesheet" href="product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="product-detail.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- Header - Same structure -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="logo-text">Shop<span class="highlight">Easy</span></span>
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-box">
+                    <form action="products.html" method="GET">
+                        <input type="text" placeholder="Search products..." class="search-input">
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- User Actions -->
+                <div class="user-actions">
+                    <a href="login.html" class="user-action">
+                        <i class="fas fa-user"></i>
+                        <span class="action-text">Account</span>
+                    </a>
+                    <a href="wishlist.html" class="user-action">
+                        <i class="fas fa-heart"></i>
+                        <span class="action-text">Wishlist</span>
+                        <span class="badge wishlist-count">0</span>
+                    </a>
+                    <a href="cart.html" class="user-action cart-action">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="action-text">Cart</span>
+                        <span class="badge cart-count">0</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="products.html?category=electronics">Electronics</a>
+                            <a href="products.html?category=fashion">Fashion</a>
+                            <a href="products.html?category=home">Home & Kitchen</a>
+                            <a href="products.html?category=sports">Sports</a>
+                            <a href="products.html?category=beauty">Beauty</a>
+                        </div>
+                    </li>
+                    <li><a href="products.html?deal=best" class="nav-link">Best Deals</a></li>
+                    <li><a href="products.html?deal=new" class="nav-link">New Arrivals</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li>Product Name</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product Detail -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="product-detail-layout">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Wireless Bluetooth Headphones" id="mainProductImage">
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                 alt="Thumbnail 1">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                 alt="Thumbnail 2">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                 alt="Thumbnail 3">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                 alt="Thumbnail 4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-header">
+                        <h1>Wireless Bluetooth Headphones</h1>
+                        <div class="product-meta">
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-text">4.2 (124 reviews)</span>
+                            </div>
+                            <div class="product-sku">
+                                SKU: <span>WH-1000XM4</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price">$89.99</span>
+                        <span class="original-price">$129.99</span>
+                        <span class="discount">30% OFF</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>Premium wireless headphones with noise cancellation, 30-hour battery life, and superior sound quality. Perfect for music lovers and professionals.</p>
+                    </div>
+
+                    <div class="product-variants">
+                        <div class="variant-group">
+                            <label>Color:</label>
+                            <div class="variant-options">
+                                <button class="variant-option active" data-color="black">Black</button>
+                                <button class="variant-option" data-color="white">White</button>
+                                <button class="variant-option" data-color="blue">Blue</button>
+                            </div>
+                        </div>
+
+                        <div class="variant-group">
+                            <label>Size:</label>
+                            <div class="variant-options">
+                                <button class="variant-option active">Standard</button>
+                                <button class="variant-option">Large</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1" max="10">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button class="btn btn-primary btn-lg add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <button class="btn btn-outline btn-lg buy-now">
+                                <i class="fas fa-bolt"></i> Buy Now
+                            </button>
+                        </div>
+
+                        <div class="wishlist-compare">
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i> Add to Wishlist
+                            </button>
+                            <button class="compare-btn">
+                                <i class="fas fa-exchange-alt"></i> Add to Compare
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-details">
+                        <div class="detail-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <div>
+                                <strong>Free Shipping</strong>
+                                <p>Free delivery on orders over $50</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-undo-alt"></i>
+                            <div>
+                                <strong>30-Day Returns</strong>
+                                <p>Easy returns within 30 days</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>2-Year Warranty</strong>
+                                <p>Manufacturer warranty included</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-share">
+                        <span>Share:</span>
+                        <div class="share-buttons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tab-headers">
+                    <button class="tab-header active" data-tab="description">Description</button>
+                    <button class="tab-header" data-tab="specifications">Specifications</button>
+                    <button class="tab-header" data-tab="reviews">Reviews (124)</button>
+                    <button class="tab-header" data-tab="shipping">Shipping & Returns</button>
+                </div>
+
+                <div class="tab-content active" id="tab-description">
+                    <h3>Product Description</h3>
+                    <p>Experience premium sound quality with our Wireless Bluetooth Headphones. Featuring advanced noise cancellation technology, these headphones provide an immersive listening experience.</p>
+                    
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Active Noise Cancellation</li>
+                        <li>30-hour battery life</li>
+                        <li>Quick charging (10 min = 5 hours playback)</li>
+                        <li>Touch controls</li>
+                        <li>Voice assistant compatibility</li>
+                        <li>Comfortable over-ear design</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="tab-specifications">
+                    <h3>Technical Specifications</h3>
+                    <table class="specs-table">
+                        <tr>
+                            <th>Brand</th>
+                            <td>AudioPro</td>
+                        </tr>
+                        <tr>
+                            <th>Model</th>
+                            <td>WH-1000XM4</td>
+                        </tr>
+                        <tr>
+                            <th>Battery Life</th>
+                            <td>30 hours</td>
+                        </tr>
+                        <tr>
+                            <th>Charging Time</th>
+                            <td>3 hours</td>
+                        </tr>
+                        <tr>
+                            <th>Bluetooth Version</th>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td>254g</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="tab-content" id="tab-reviews">
+                    <h3>Customer Reviews</h3>
+                    <div class="reviews-summary">
+                        <div class="average-rating">
+                            <div class="rating-number">4.2</div>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p>Based on 124 reviews</p>
+                        </div>
+                        <div class="rating-distribution">
+                            <!-- Rating distribution bars -->
+                        </div>
+                    </div>
+
+                    <div class="review-form">
+                        <h4>Write a Review</h4>
+                        <form>
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <div class="rating-input">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Write your review..." rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Review</button>
+                        </form>
+                    </div>
+
+                    <div class="reviews-list">
+                        <!-- Reviews will be loaded here -->
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-shipping">
+                    <h3>Shipping & Returns</h3>
+                    <h4>Shipping Information:</h4>
+                    <ul>
+                        <li>Free shipping on orders over $50</li>
+                        <li>Standard shipping: 3-5 business days</li>
+                        <li>Express shipping: 1-2 business days</li>
+                        <li>International shipping available</li>
+                    </ul>
+                    
+                    <h4>Return Policy:</h4>
+                    <ul>
+                        <li>30-day return policy</li>
+                        <li>Items must be in original condition</li>
+                        <li>Free returns for defective products</li>
+                        <li>Refund processed within 5-7 business days</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>You May Also Like</h2>
+                <div class="related-products-grid">
+                    <!-- Related products will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="logo-text">Shop<span class="highlight">Easy</span></span>
+                        </a>
+                    </div>
+                    <p>Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Return Policy</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@shopeasy.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="product-detail.js"></script>
+    <script>
+        // Product detail specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Image gallery
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const mainImage = document.getElementById('mainProductImage');
+            
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    // Remove active class from all thumbnails
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    // Add active class to clicked thumbnail
+                    this.classList.add('active');
+                    // Update main image
+                    const imgSrc = this.querySelector('img').src;
+                    mainImage.src = imgSrc.replace('w=200', 'w=800');
+                });
+            });
+
+            // Quantity selector
+            const quantityInput = document.querySelector('.quantity-input');
+            const minusBtn = document.querySelector('.quantity-btn.minus');
+            const plusBtn = document.querySelector('.quantity-btn.plus');
+            
+            minusBtn.addEventListener('click', () => {
+                let value = parseInt(quantityInput.value);
+                if (value > 1) {
+                    quantityInput.value = value - 1;
+                }
+            });
+            
+            plusBtn.addEventListener('click', () => {
+                let value = parseInt(quantityInput.value);
+                if (value < 10) {
+                    quantityInput.value = value + 1;
+                }
+            });
+
+            // Tab switching
+            const tabHeaders = document.querySelectorAll('.tab-header');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Update active tab header
+                    tabHeaders.forEach(h => h.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Update active tab content
+                    tabContents.forEach(content => {
+                        content.classList.remove('active');
+                        if (content.id === `tab-${tabId}`) {
+                            content.classList.add('active');
+                        }
+                    });
+                });
+            });
+
+            // Variant selection
+            const variantOptions = document.querySelectorAll('.variant-option');
+            variantOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    const parent = this.parentElement;
+                    parent.querySelectorAll('.variant-option').forEach(opt => {
+                        opt.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                });
+            });
+
+            // Add to cart
+            const addToCartBtn = document.querySelector('.add-to-cart');
+            addToCartBtn.addEventListener('click', function() {
+                const quantity = parseInt(quantityInput.value);
+                // Add to cart logic here
+                alert(`${quantity} item(s) added to cart!`);
+            });
+
+            // Buy now
+            const buyNowBtn = document.querySelector('.buy-now');
+            buyNowBtn.addEventListener('click', function() {
+                window.location.href = 'checkout.html';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ShopEasy | Premium E-commerce Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="logo-text">Shop<span class="highlight">Easy</span></span>
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-box">
+                    <form action="products.html" method="GET">
+                        <input type="text" placeholder="Search products..." class="search-input">
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- User Actions -->
+                <div class="user-actions">
+                    <a href="login.html" class="user-action">
+                        <i class="fas fa-user"></i>
+                        <span class="action-text">Account</span>
+                    </a>
+                    <a href="wishlist.html" class="user-action">
+                        <i class="fas fa-heart"></i>
+                        <span class="action-text">Wishlist</span>
+                        <span class="badge wishlist-count">0</span>
+                    </a>
+                    <a href="cart.html" class="user-action cart-action active">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="action-text">Cart</span>
+                        <span class="badge cart-count">3</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="products.html?category=electronics">Electronics</a>
+                            <a href="products.html?category=fashion">Fashion</a>
+                            <a href="products.html?category=home">Home & Kitchen</a>
+                            <a href="products.html?category=sports">Sports</a>
+                            <a href="products.html?category=beauty">Beauty</a>
+                        </div>
+                    </li>
+                    <li><a href="products.html?deal=best" class="nav-link">Best Deals</a></li>
+                    <li><a href="products.html?deal=new" class="nav-link">New Arrivals</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Shopping Cart</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="page-header">
+                <h1>Shopping Cart</h1>
+            </div>
+
+            <div class="cart-layout">
+                <!-- Cart Items -->
+                <div class="cart-items-container">
+                    <div class="cart-header">
+                        <div class="cart-header-item product">Product</div>
+                        <div class="cart-header-item price">Price</div>
+                        <div class="cart-header-item quantity">Quantity</div>
+                        <div class="cart-header-item total">Total</div>
+                        <div class="cart-header-item action">Action</div>
+                    </div>
+
+                    <div class="cart-items">
+                        <!-- Cart Item 1 -->
+                        <div class="cart-item">
+                            <div class="cart-item-cell product">
+                                <div class="cart-item-image">
+                                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                         alt="Wireless Headphones">
+                                </div>
+                                <div class="cart-item-info">
+                                    <h3><a href="product-detail.html">Wireless Bluetooth Headphones</a></h3>
+                                    <p class="cart-item-variant">Color: Black | Size: Standard</p>
+                                    <p class="cart-item-sku">SKU: WH-1000XM4</p>
+                                </div>
+                            </div>
+                            <div class="cart-item-cell price">
+                                <span class="current-price">$89.99</span>
+                                <span class="original-price">$129.99</span>
+                            </div>
+                            <div class="cart-item-cell quantity">
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" class="quantity-input" value="1" min="1" max="10">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="cart-item-cell total">
+                                <span>$89.99</span>
+                            </div>
+                            <div class="cart-item-cell action">
+                                <button class="remove-btn" title="Remove item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                                <button class="wishlist-btn" title="Move to wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Cart Item 2 -->
+                        <div class="cart-item">
+                            <div class="cart-item-cell product">
+                                <div class="cart-item-image">
+                                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                         alt="Smart Watch">
+                                </div>
+                                <div class="cart-item-info">
+                                    <h3><a href="product-detail.html">Smart Fitness Watch</a></h3>
+                                    <p class="cart-item-variant">Color: Black | Strap: Silicone</p>
+                                    <p class="cart-item-sku">SKU: SW-FIT2024</p>
+                                </div>
+                            </div>
+                            <div class="cart-item-cell price">
+                                <span class="current-price">$199.99</span>
+                                <span class="original-price">$249.99</span>
+                            </div>
+                            <div class="cart-item-cell quantity">
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" class="quantity-input" value="1" min="1" max="10">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="cart-item-cell total">
+                                <span>$199.99</span>
+                            </div>
+                            <div class="cart-item-cell action">
+                                <button class="remove-btn" title="Remove item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                                <button class="wishlist-btn" title="Move to wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Cart Item 3 -->
+                        <div class="cart-item">
+                            <div class="cart-item-cell product">
+                                <div class="cart-item-image">
+                                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                                         alt="Coffee Set">
+                                </div>
+                                <div class="cart-item-info">
+                                    <h3><a href="product-detail.html">Organic Coffee Set</a></h3>
+                                    <p class="cart-item-variant">Set: 250g x 2 | Grind: Medium</p>
+                                    <p class="cart-item-sku">SKU: CS-ORG250</p>
+                                </div>
+                            </div>
+                            <div class="cart-item-cell price">
+                                <span class="current-price">$24.99</span>
+                                <span class="original-price">$34.99</span>
+                            </div>
+                            <div class="cart-item-cell quantity">
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" class="quantity-input" value="2" min="1" max="10">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="cart-item-cell total">
+                                <span>$49.98</span>
+                            </div>
+                            <div class="cart-item-cell action">
+                                <button class="remove-btn" title="Remove item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                                <button class="wishlist-btn" title="Move to wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Actions -->
+                    <div class="cart-actions">
+                        <div class="cart-coupon">
+                            <input type="text" placeholder="Enter coupon code" class="coupon-input">
+                            <button class="btn btn-outline apply-coupon">Apply Coupon</button>
+                        </div>
+                        <div class="cart-buttons">
+                            <a href="products.html" class="btn btn-outline">
+                                <i class="fas fa-arrow-left"></i> Continue Shopping
+                            </a>
+                            <button class="btn btn-outline update-cart">
+                                <i class="fas fa-sync-alt"></i> Update Cart
+                            </button>
+                            <button class="btn btn-outline clear-cart">
+                                <i class="fas fa-trash"></i> Clear Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <div class="summary-card">
+                        <h3>Order Summary</h3>
+                        
+                        <div class="summary-row">
+                            <span>Subtotal (3 items)</span>
+                            <span>$339.96</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span class="free-shipping">FREE</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span>$27.20</span>
+                        </div>
+                        
+                        <div class="summary-row discount">
+                            <span>Discount (SUMMER20)</span>
+                            <span class="discount-amount">-$20.00</span>
+                        </div>
+                        
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span class="total-amount">$347.16</span>
+                        </div>
+                        
+                        <div class="summary-actions">
+                            <a href="checkout.html" class="btn btn-primary btn-block">
+                                Proceed to Checkout <i class="fas fa-arrow-right"></i>
+                            </a>
+                            
+                            <div class="secure-checkout">
+                                <i class="fas fa-lock"></i>
+                                <span>Secure checkout</span>
+                            </div>
+                            
+                            <div class="payment-methods-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                                <i class="fab fa-cc-paypal"></i>
+                                <i class="fab fa-apple-pay"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Calculator -->
+                    <div class="shipping-calculator">
+                        <h4>Calculate Shipping</h4>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>Select Country</option>
+                                <option>United States</option>
+                                <option>Canada</option>
+                                <option>United Kingdom</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="ZIP/Postal Code">
+                        </div>
+                        <button class="btn btn-outline btn-block">Calculate</button>
+                    </div>
+
+                    <!-- Continue Shopping -->
+                    <div class="continue-shopping">
+                        <h4>Continue Shopping</h4>
+                        <div class="quick-links">
+                            <a href="products.html?category=electronics">
+                                <i class="fas fa-laptop"></i> Electronics
+                            </a>
+                            <a href="products.html?category=fashion">
+                                <i class="fas fa-tshirt"></i> Fashion
+                            </a>
+                            <a href="products.html?category=home">
+                                <i class="fas fa-home"></i> Home & Kitchen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recently Viewed -->
+            <div class="recently-viewed">
+                <h2>Recently Viewed Products</h2>
+                <div class="recent-products-grid">
+                    <!-- Recently viewed products will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="logo-text">Shop<span class="highlight">Easy</span></span>
+                        </a>
+                    </div>
+                    <p>Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Return Policy</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@shopeasy.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script>
+        // Cart page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Quantity selectors
+            const quantityInputs = document.querySelectorAll('.quantity-input');
+            const minusBtns = document.querySelectorAll('.quantity-btn.minus');
+            const plusBtns = document.querySelectorAll('.quantity-btn.plus');
+            
+            minusBtns.forEach((btn, index) => {
+                btn.addEventListener('click', () => {
+                    let value = parseInt(quantityInputs[index].value);
+                    if (value > 1) {
+                        quantityInputs[index].value = value - 1;
+                        updateTotal(index);
+                    }
+                });
+            });
+            
+            plusBtns.forEach((btn, index) => {
+                btn.addEventListener('click', () => {
+                    let value = parseInt(quantityInputs[index].value);
+                    if (value < 10) {
+                        quantityInputs[index].value = value + 1;
+                        updateTotal(index);
+                    }
+                });
+            });
+            
+            // Update total for item
+            function updateTotal(index) {
+                const priceElement = document.querySelectorAll('.cart-item-cell.price')[index];
+                const totalElement = document.querySelectorAll('.cart-item-cell.total')[index];
+                const price = parseFloat(priceElement.querySelector('.current-price').textContent.replace('$', ''));
+                const quantity = parseInt(quantityInputs[index].value);
+                const total = (price * quantity).toFixed(2);
+                totalElement.innerHTML = `<span>$${total}</span>`;
+                updateCartSummary();
+            }
+            
+            // Remove item
+            const removeBtns = document.querySelectorAll('.remove-btn');
+            removeBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const cartItem = this.closest('.cart-item');
+                    cartItem.style.animation = 'fadeOut 0.3s ease';
+                    setTimeout(() => {
+                        cartItem.remove();
+                        updateCartSummary();
+                    }, 300);
+                });
+            });
+            
+            // Move to wishlist
+            const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+            wishlistBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    alert('Item moved to wishlist!');
+                    const cartItem = this.closest('.cart-item');
+                    cartItem.remove();
+                    updateCartSummary();
+                });
+            });
+            
+            // Apply coupon
+            const applyCouponBtn = document.querySelector('.apply-coupon');
+            const couponInput = document.querySelector('.coupon-input');
+            
+            applyCouponBtn.addEventListener('click', function() {
+                const coupon = couponInput.value.trim();
+                if (coupon === 'SUMMER20') {
+                    alert('Coupon applied successfully! 20% discount applied.');
+                    updateCartSummary();
+                } else {
+                    alert('Invalid coupon code');
+                }
+            });
+            
+            // Update cart
+            const updateCartBtn = document.querySelector('.update-cart');
+            updateCartBtn.addEventListener('click', function() {
+                alert('Cart updated successfully!');
+                updateCartSummary();
+            });
+            
+            // Clear cart
+            const clearCartBtn = document.querySelector('.clear-cart');
+            clearCartBtn.addEventListener('click', function() {
+                if (confirm('Are you sure you want to clear your cart?')) {
+                    document.querySelectorAll('.cart-item').forEach(item => {
+                        item.remove();
+                    });
+                    updateCartSummary();
+                    alert('Cart cleared!');
+                }
+            });
+            
+            // Update cart summary
+            function updateCartSummary() {
+                // Calculate totals
+                const items = document.querySelectorAll('.cart-item');
+                let subtotal = 0;
+                
+                items.forEach(item => {
+                    const priceElement = item.querySelector('.cart-item-cell.price .current-price');
+                    const quantityElement = item.querySelector('.quantity-input');
+                    const price = parseFloat(priceElement.textContent.replace('$', ''));
+                    const quantity = parseInt(quantityElement.value);
+                    subtotal += price * quantity;
+                });
+                
+                // Update summary
+                const subtotalElement = document.querySelector('.summary-row:nth-child(1) span:last-child');
+                const totalElement = document.querySelector('.total-amount');
+                
+                subtotalElement.textContent = `$${subtotal.toFixed(2)}`;
+                
+                // Calculate tax (8%)
+                const tax = subtotal * 0.08;
+                document.querySelector('.summary-row:nth-child(3) span:last-child').textContent = `$${tax.toFixed(2)}`;
+                
+                // Calculate total
+                const discount = 20.00; // Fixed discount for demo
+                const total = subtotal + tax - discount;
+                totalElement.textContent = `$${total.toFixed(2)}`;
+                
+                // Update item count in header
+                const itemCount = items.length;
+                document.querySelector('.cart-count').textContent = itemCount;
+            }
+            
+            // Initial calculation
+            updateCartSummary();
+        });
+    </script>
+</body>
+</html>

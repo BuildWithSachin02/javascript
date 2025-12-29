@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopEasy | Premium E-commerce Store</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <!-- Page specific CSS -->
+    <link rel="stylesheet" href="products.css">
+    <!-- OR -->
+    <link rel="stylesheet" href="product-detail.css">
+    <!-- OR -->
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!-- Header - Same as index.html -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="logo-text">Shop<span class="highlight">Easy</span></span>
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-box">
+                    <form action="products.html" method="GET">
+                        <input type="text" placeholder="Search products..." class="search-input">
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- User Actions -->
+                <div class="user-actions">
+                    <a href="login.html" class="user-action">
+                        <i class="fas fa-user"></i>
+                        <span class="action-text">Account</span>
+                    </a>
+                    <a href="wishlist.html" class="user-action">
+                        <i class="fas fa-heart"></i>
+                        <span class="action-text">Wishlist</span>
+                        <span class="badge wishlist-count">0</span>
+                    </a>
+                    <a href="cart.html" class="user-action cart-action">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="action-text">Cart</span>
+                        <span class="badge cart-count">0</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" class="nav-link active">Shop <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="products.html?category=electronics">Electronics</a>
+                            <a href="products.html?category=fashion">Fashion</a>
+                            <a href="products.html?category=home">Home & Kitchen</a>
+                            <a href="products.html?category=sports">Sports</a>
+                            <a href="products.html?category=beauty">Beauty</a>
+                        </div>
+                    </li>
+                    <li><a href="products.html?deal=best" class="nav-link">Best Deals</a></li>
+                    <li><a href="products.html?deal=new" class="nav-link">New Arrivals</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Products</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>All Products</h1>
+                <p>Discover our amazing collection</p>
+            </div>
+
+            <div class="products-layout">
+                <!-- Sidebar Filters -->
+                <aside class="products-sidebar">
+                    <div class="filter-card">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="products.html" class="active">All Products</a></li>
+                            <li><a href="products.html?category=electronics">Electronics</a></li>
+                            <li><a href="products.html?category=fashion">Fashion</a></li>
+                            <li><a href="products.html?category=home">Home & Kitchen</a></li>
+                            <li><a href="products.html?category=sports">Sports</a></li>
+                            <li><a href="products.html?category=beauty">Beauty</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-card">
+                        <h3>Price Range</h3>
+                        <div class="price-filter">
+                            <input type="range" min="0" max="1000" value="500" class="price-slider" id="priceSlider">
+                            <div class="price-values">
+                                <span>$0</span>
+                                <span id="priceValue">$500</span>
+                                <span>$1000</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary apply-price">Apply</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-card">
+                        <h3>Brand</h3>
+                        <div class="brand-filter">
+                            <label class="checkbox">
+                                <input type="checkbox" checked>
+                                <span>Apple</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Samsung</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Sony</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Nike</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span>Adidas</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-card">
+                        <h3>Rating</h3>
+                        <div class="rating-filter">
+                            <label class="radio">
+                                <input type="radio" name="rating" checked>
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span>& Up</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <span>& Up</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <span>& Up</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-block apply-filters">Apply Filters</button>
+                    <button class="btn btn-outline btn-block clear-filters">Clear All</button>
+                </aside>
+
+                <!-- Products Grid -->
+                <main class="products-main">
+                    <div class="products-toolbar">
+                        <div class="toolbar-left">
+                            <span class="products-count">Showing 24 of 120 products</span>
+                        </div>
+                        <div class="toolbar-right">
+                            <select class="sort-select">
+                                <option value="default">Sort by Default</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Highest Rated</option>
+                                <option value="newest">Newest First</option>
+                            </select>
+                            <div class="view-toggle">
+                                <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                                <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="productsContainer">
+                        <!-- Products will be loaded here via JavaScript -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="pagination-btn prev" disabled>
+                            <i class="fas fa-chevron-left"></i> Previous
+                        </button>
+                        <div class="pagination-numbers">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                        </div>
+                        <button class="pagination-btn next">
+                            Next <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get updates on new arrivals and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Same as index.html -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="logo-text">Shop<span class="highlight">Easy</span></span>
+                        </a>
+                    </div>
+                    <p>Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Return Policy</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="support.html">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@shopeasy.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>
