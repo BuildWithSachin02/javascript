@@ -4,9 +4,9 @@ ShopEasy is a fully responsive, modern e-commerce website with complete function
 
 🚀 Features
 ✅ Core Features
-Multi-page Architecture - 11 complete pages
+Multi-page Architecture - 11 complete pages 
 
-Fully Responsive Design - Mobile-first approach
+Fully Responsive Design - Mobile-first approach and
 
 Modern UI/UX - Clean, professional interface
 
