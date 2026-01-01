@@ -3,7 +3,7 @@ explaination:
        1. timeLeft = Number(inputValue); =>
             User jo input likhta hai → TEXT hota hai.
             Timer ko text samajh nahi aata.
-            Number(inputValue) → Text ko number me convert karta hai.
+            Number(inputValue) → Text ko number me convert karta hai
             Phir timer number ko countdown karta hai.
        
             
@@ -123,3 +123,4 @@ document.getElementById("reset").onclick = resetTimer;// button pe click krne se
 // document.getElementById("start").onclick = startTimer;
 // document.getElementById("stop").onclick = stopTimer;
 // document.getElementById("reset").onclick = resetTimer;
+
