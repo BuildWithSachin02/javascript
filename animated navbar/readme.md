@@ -22,7 +22,7 @@ The navigation bar smoothly expands and collapses with a rotating menu animation
 - CSS3 (Transitions & Transforms)  
 - JavaScript (DOM Manipulation)
 
----
+---//
 
 ## 🔹 Project Structure
 
