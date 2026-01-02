@@ -3,7 +3,7 @@
 A simple and beginner-friendly **Age Calculator** built using **HTML, CSS, and JavaScript**.  
 This project calculates a user’s age in **years, months, days, hours, minutes, and seconds** based on their date of birth.
 
----
+----
 
 ## ✨ Features
 
@@ -13,6 +13,7 @@ This project calculates a user’s age in **years, months, days, hours, minutes,
 - 🧠 Beginner-friendly logic
 - 🎨 Clean and modern UI
 - 🚫 Input validation (date required)
+
 
 ---
 
