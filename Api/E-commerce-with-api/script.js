@@ -1,4 +1,31 @@
 const products_container = document.getElementById("products");
+const searchbox = document.getElementById("searchbox");
+
+let allProducts = [];
+
+searchbox.addEventListener("input",()=>{
+   const searchInput = searchbox.value.toLowerCase();
+    const filterProducts = allProducts.filter(product=> 
+        product.title.toLowerCase().includes(searchInput)
+    );//filter() array ke har item ko check karta hai jo item true deta hai → new array me aa jata hai
+    //hmne filter q use kiya hum toh issme find bhi use kr skte but boh sahi lekin hum jispe kaam kr rhe h 
+    //uske liye approch glt ho jati result toh milta bit hme kyy chhiye ki multiple result 
+    //jese ki amazone baki ke e-commerce ke websites me esa hii approach hota h issme 
+    //isliye hmne filter use kiya h 
+    //ex: backet[iphone,headphone,phone,apple,vivo,oppo];
+    //backet.filter(items=> items.title.toLowercase.includes(searchInput));
+    //result:hme yeh milega => [iphone,phone,headphone] yeh sahi jo ecommeerce ke liye best apporoch h 
+    products_container.innerHTML = "";
+
+    if(filterProducts.length === 0){
+        products_container.innerHTML = `<p style="text-align:center; color:red">
+        ❌ not in store
+         </p>`;
+         //isme hmne jab koi match nhi mila toh usse hme yeh message dena h 
+    }else{
+        Createproducts(filterProducts);
+    }
+});    
 
 const Createproducts = (products)=>{
     products.forEach((product)=>{
@@ -41,7 +68,8 @@ const fetchProducts = ()=>{
         return res.json();
     })
     .then((data)=>{
-        Createproducts(data.products);
+        allProducts = data.products;//store globally products
+        Createproducts(allProducts);
     })
     .catch((error)=>{
         console.log("Error Fetching products:", error);

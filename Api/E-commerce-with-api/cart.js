@@ -93,9 +93,6 @@ function UpdateItems(){//yeh settitme kyy krta h smjo mere pss ek page h mene ek
     ShowCartitems();//fir update krne ke baad mujhe baki ke items ko display krwanh  mujhe isse 
 }
 
-
-
-
 // ===============================
 // INITIAL CALL
 // ===============================
