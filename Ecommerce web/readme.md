@@ -2,6 +2,7 @@ ShopEasy - Complete E-commerce Website
 📋 Project Overview
 ShopEasy is a fully responsive, modern e-commerce website with complete functionality including product listings, shopping cart, checkout process, user authentication, and more.
 
+
 🚀 Features
 ✅ Core Features
 Multi-page Architecture - 11 complete pages 
