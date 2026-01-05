@@ -12,7 +12,7 @@ This project calculates a user’s age in **years, months, days, hours, minutes,
   - Years
 - 🧠 Beginner-friendly logic
 - 🎨 Clean and modern UI
-- 🚫 Input validation (date required)
+- 🚫 Input validation (date required))
 
 
 ---
