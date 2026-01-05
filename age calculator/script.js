@@ -1,4 +1,4 @@
-const birth = document.getElementById("birthday");
+const birth = document.getElementById("birthday ");
 const btn = document.getElementById("btn");
 const result = document.getElementById("result");
 
@@ -12,4 +12,5 @@ btn.addEventListener("click", function(){
     const birthdate = new Date(birthdayValue);
     let age = today.getFullYear() - birthdate.getFullYear();
     result.textContent = "Your age is " + age + " year old";
+
 });
