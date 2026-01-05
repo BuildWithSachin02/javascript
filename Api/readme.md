@@ -13,7 +13,7 @@ JavaScript fundamentals
 
 fetch() API
 
-DOM manipulation
+DOM manipulation-
 
 Responsive UI design
 
