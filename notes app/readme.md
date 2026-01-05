@@ -1,6 +1,6 @@
 # Notes App (CRUD + LocalStorage)
 
-This is a **simple Notes App** built using **HTML, CSS, and JavaScript**.  
+This is a ***simple Notes App***  built using **HTML, CSS, and JavaScript**.  
 The project is designed for **beginners** to understand **DOM manipulation**, **arrays**, and **LocalStorage** step by step.
 
 The app allows users to:
