@@ -1,4 +1,4 @@
-# 💰 Premium Price Range Slider
+# 💰 Premium Price Range Slider.
 
 <div align="center">
 
