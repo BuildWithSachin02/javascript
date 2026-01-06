@@ -27,7 +27,7 @@ This project calculates a user’s age in **years, months, days, hours, minutes,
 - **CSS3** – Styling & layout
 - **JavaScript (Vanilla JS)** – Logic & calculations
 
----
+----
 
 ## 📂 Project Structure
 
