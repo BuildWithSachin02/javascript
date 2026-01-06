@@ -3,7 +3,7 @@
 A modern, responsive API-based comments viewer built using Vanilla JavaScript, HTML, and CSS.
 This project demonstrates how to fetch data from an external API and render it dynamically with a clean, professional UI.
 
-🚀 Project Overview
+🚀 Project Overview-
 
 This project uses the JSONPlaceholder API to fetch comments data and display it in a glassmorphism-style card layout.
 
