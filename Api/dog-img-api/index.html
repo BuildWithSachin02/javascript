@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Dog Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h2 class="logo">Doggo🐶</h2>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <h1 class="title">Random Dog Image</h1>
+    <p class="subtitle">
+      Powered by Dog API • Clean UI • Responsive Design
+    </p>
+
+    <!-- IMAGE CARD -->
+    <div class="dog-card">
+
+      <!-- JS baad me yahan image src change karega -->
+      <img 
+        src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" 
+        alt="Random Dog"
+        id="dog-img"
+      >
+
+      <div class="card-footer">
+        <button id="dog-change-btn" class="btn">Get New Dog</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Built for API Practice • © 2025</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
