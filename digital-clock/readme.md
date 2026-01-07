@@ -14,7 +14,7 @@ A simple and elegant real-time digital clock that displays the current day, hour
 
 ## 📁 Project Structure
 
-```
+```-
 digital-clock/
 ├── index.html     # HTML markup
 ├── style.css      # CSS styling
