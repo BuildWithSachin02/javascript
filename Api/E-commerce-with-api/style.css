@@ -144,7 +144,8 @@ body {
 
 .price-row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 5px;
   margin-bottom: 12px;
 }
 

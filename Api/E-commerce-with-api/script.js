@@ -41,7 +41,8 @@ const Createproducts = (products)=>{
 
         <div class="price-row">
           <span class="price">$ ${product.price}</span>
-          <span class="rating">Rating: ${product.rating }</span>
+          <span class="rating">Rating: ${product.rating}</span>
+          <span class="rating">stock: ${product.stock}</span>
         </div>
 
         <button  class = "cart-btn" >Add to Cart</button>
@@ -53,6 +54,7 @@ const Createproducts = (products)=>{
             id:product.id,
             title:product.title,
             price:product.price,
+            stock:product.stock,
         });
     });   
         products_container.appendChild(items);
@@ -111,6 +113,7 @@ function addToCart(product){
             title:product.title,
             price:product.price,
             qty:1,
+            stock:product.stock,
          });     
     }
     // Step 4: updated cart wapas localStorage me save karo

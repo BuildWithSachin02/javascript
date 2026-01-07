@@ -1,3 +1,5 @@
+// const { createElement } = require("react");
+
 const cart_container = document.getElementById("cart-items");
 const totalitems = document.getElementById("total-items");
 const totalPrice = document.getElementById("total-price");
@@ -38,6 +40,7 @@ function ShowCartitems(){
         <div class="item-details">
           <h3>${items.title}</h3>
           <p>Price:$${items.price}</p>
+          <p>stocks: ${items.stock} - left</p>
         </div>
         <div class="item-price">
           <div class="quantity-control">
@@ -46,12 +49,12 @@ function ShowCartitems(){
             <button onclick="increseQty(${items.id})"  class="qty-btn">+</button>
           </div>
 
-          <p class="price">Total:$${items.price * items.qty}</p>
+          <p class="price">Total:$${(items.price * items.qty).toFixed(2)}</p>
           <button onclick="removeitem(${items.id})"  class="remove-btn">Remove</button>
         </div>
             `;
             cart_container.appendChild(div);
-            totalPrice.textContent = total;
+            totalPrice.textContent = (total).toFixed(2);
             totalitems.textContent = totalqty;
     });
 }
@@ -60,9 +63,15 @@ function ShowCartitems(){
 // INCREASE QUANTITY
 // ===============================
 function increseQty(id){//cart ke array me product element => us pro ki id === click ki huii ki product ki id dono same honi chhiye tabhi increase hoga 
-    const item = cart.find(product => product.id === id);
+    const item  = cart.find(product => product.id === id);
+    //safety check
+    if(!item)return;
+    if(item.stock <= item.qty){
+        alert(`⚠️ only ${item.stock} item available in stock`);
+        return;
+    }
     item.qty += 1;
-    UpdateItems();
+    UpdateItems(); 
 }
 // ===============================
 // DECREASE QUANTITY
