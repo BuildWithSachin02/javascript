@@ -1,4 +1,4 @@
-📀 API Albums Gallery
+📀 API Albums Gallery--
 
 (JavaScript Learning Project)
 
@@ -166,5 +166,6 @@ Aspiring Web Developer
 Currently learning JavaScript, APIs, and modern UI design
 
 📜 License
+
 
 This project is open-source and free to use for learning and educational purposes.
