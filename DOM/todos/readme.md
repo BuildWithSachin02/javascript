@@ -2,7 +2,7 @@
 
 A simple and clean todo list application built with vanilla HTML, CSS, and JavaScript. Add, manage, and track your daily tasks with an intuitive interface.
 
-## ✨ Features
+# ✨ Features
 
 - **Add Tasks**: Simple input field to add new todo items
 - **Display Tasks**: Shows all added tasks in a list format
