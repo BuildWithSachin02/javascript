@@ -1,4 +1,4 @@
-🎯 Number Guessing Game
+🎯 Number Guessing Game-
 # 🎯 Number Guessing Game
 
 A simple and logic-focused **Number Guessing Game** built using **HTML, CSS, and JavaScript**.  
