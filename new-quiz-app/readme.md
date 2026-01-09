@@ -3,7 +3,7 @@
 A fully functional Quiz Application built using HTML, CSS, and JavaScript.
 This project includes a timer-based MCQ test, score calculation, and a dynamic result page with PASS/FAIL status.
 
-🚀 Features
+🚀 Features-
 
 User-friendly quiz interface
 
