@@ -1,6 +1,6 @@
 # Random Dog Viewer 🐕
 
---output
+---output
 https://github.com/user-attachments/assets/faf4f793-92bc-4ee2-9aae-5a490cd34c1a
 
 A simple and fun web application that displays random dog images. This project is built for **API integration practice**.
@@ -472,5 +472,6 @@ After completing this project:
 ⭐ If you found this helpful, please give the repository a star! ⭐
 
 For issues, suggestions, or improvements, feel free to open an issue or reach out on LinkedIn!
+
 
 
