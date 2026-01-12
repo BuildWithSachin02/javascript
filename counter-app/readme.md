@@ -1,4 +1,4 @@
-🔢 Counter App (Limit Logic)-
+🔢 Counter App (Limit Logic)--
 # 🔢 Counter App with Limit Logic
 
 A simple yet effective **Counter Application** built using **HTML, CSS, and JavaScript**.  
