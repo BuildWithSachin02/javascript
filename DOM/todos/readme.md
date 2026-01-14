@@ -1,4 +1,4 @@
-# Todo List App--
+# Todo List App
 
 A simple and clean todo list application built with vanilla HTML, CSS, and JavaScript. Add, manage, and track your daily tasks with an intuitive interface.
 
