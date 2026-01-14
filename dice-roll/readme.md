@@ -3,7 +3,7 @@
 An interactive and visually polished **Dice Roll Simulator** built using **HTML, CSS, and JavaScript**.  
 This project demonstrates DOM manipulation, CSS animations, and clean UI design with custom dice dots (pips).
 
-----
+--
 
 ## ✨ Features
 
