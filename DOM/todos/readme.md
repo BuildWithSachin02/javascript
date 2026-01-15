@@ -14,7 +14,7 @@ A simple and clean todo list application built with vanilla HTML, CSS, and JavaS
 
 ## 📁 Project Structure
 
-```
+``
 todo-list-app/
 ├── index.html      # HTML markup
 ├── style.css       # CSS styling
