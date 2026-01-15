@@ -3,7 +3,6 @@
 This project demonstrates a clean and interactive **Animated Navigation Menu** built using **HTML, CSS, and JavaScript**.  
 The navigation bar smoothly expands and collapses with a rotating menu animation when the toggle button is clicked.
 
---
 
 ## 🔹 Features
 
