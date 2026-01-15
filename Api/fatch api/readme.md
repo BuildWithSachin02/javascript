@@ -1,6 +1,6 @@
 
 
-📄 API Posts Card Viewer---
+📄 API Posts Card Viewer--
 
 (JavaScript Learning Project)
 
