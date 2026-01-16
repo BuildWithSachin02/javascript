@@ -2,7 +2,7 @@
 
 A simple web dashboard to view and manage N8N automation workflows.
 
----
+--
 
 ## 📌 What is this?
 
