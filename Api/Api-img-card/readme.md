@@ -7,7 +7,7 @@
 
 A sleek, modern, and high-performance web application that dynamically fetches data from a REST API and renders it in a visually stunning card-based layout. Built with a focus on **Glassmorphism**, smooth transitions, and responsive architecture.
 
----
+----
 
 ## 🚀 Key Features
 
