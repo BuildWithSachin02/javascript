@@ -1,4 +1,4 @@
-🔐 OTP Input UI (JavaScript)-
+🔐 OTP Input UI (JavaScript)
 
 A clean and user-friendly OTP (One-Time Password) input interface built using HTML, CSS, and JavaScript.
 This project automatically moves focus between input fields, allows only numeric values, and handles backspace navigation smoothly.
