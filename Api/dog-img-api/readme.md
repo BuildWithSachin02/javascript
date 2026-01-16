@@ -8,7 +8,7 @@
 ![CSS](https://img.shields.io/badge/CSS3-✓-green)
 ![JavaScript](https://img.shields.io/badge/JavaScript-✓-green)
 
----
+----
 
 ## 📋 Table of Contents
 
@@ -402,3 +402,4 @@ random-dog-viewer/
 
 
 ⭐ अगर helpful लगा तो GitHub पर **star** करो! ⭐
+
