@@ -9,7 +9,7 @@ The app allows users to:-
 - Delete notes
 - Save notes permanently using LocalStorage
 
-----
+---
 
 ## ✨ Features
 
