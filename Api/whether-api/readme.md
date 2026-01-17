@@ -2,7 +2,7 @@
 
 A beautiful, responsive weather application that shows real-time weather information for any city worldwide.
 
----
+--
 
 ## 📸 Preview
 
@@ -458,4 +458,5 @@ Free to use for learning and practice! 🎉
 - [CSS Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 - [Date Object in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
 
