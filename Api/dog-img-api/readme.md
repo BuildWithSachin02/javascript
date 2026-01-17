@@ -1,6 +1,6 @@
 # Random Dog Viewer 🐕
 
-एक सरल और मजेदार web application जो random dog images दिखाता है। यह project **API integration practice** के लिए बना है।
+A simple and fun web application that displays random dog images. This project is built for **API integration practice**.
 
 ![Status](https://img.shields.io/badge/status-Learning%20Project-yellow)
 ![API](https://img.shields.io/badge/API-Dog.CEO-blue)
@@ -28,25 +28,25 @@
 
 ## 📚 About
 
-**Random Dog Viewer** एक educational project है जो सीखने के लिए बना है। यह demonstrate करता है:
-- REST API से data कैसे fetch करते हैं
-- DOM manipulation कैसे करते हैं
-- Loading state कैसे show करते हैं
-- Modern CSS styling कैसे करते हैं
+**Random Dog Viewer** is an educational project built for learning purposes. It demonstrates:
+- How to fetch data from REST APIs
+- How to manipulate the DOM
+- How to show loading states
+- How to apply modern CSS styling
 
-यह project **Dog.CEO API** का use करता है जो free है और unlimited dog images provide करता है। 🐶
+This project uses the **Dog.CEO API**, which is free and provides unlimited dog images. 🐶
 
 ---
 
 ## ✨ Features
 
-- 🎲 **Random Dog Images**: हर बार एक नया dog image दिखाता है
-- 🔘 **Simple Button**: "Get New Dog" button से नया image लाएं
-- ⏳ **Loading Effect**: Image load होते समय opacity effect दिखता है
+- 🎲 **Random Dog Images**: Displays a new dog image every time
+- 🔘 **Simple Button**: Get new images with the "Get New Dog" button
+- ⏳ **Loading Effect**: Shows opacity effect while image is loading
 - 🎨 **Beautiful UI**: Modern dark theme with gradient background
-- 📱 **Responsive Design**: Mobile, tablet, desktop सब पर काम करता है
-- 🚀 **Fast Loading**: API से तुरंत response मिलता है
-- 🔗 **Free API**: Dog.CEO API completely free है
+- 📱 **Responsive Design**: Works on mobile, tablet, and desktop
+- 🚀 **Fast Loading**: Instant response from the API
+- 🔗 **Free API**: Dog.CEO API is completely free
 
 ---
 
@@ -66,21 +66,21 @@
 
 ### Quick Start
 
-**Step 1: Clone या Download करो**
+**Step 1: Clone or Download**
 ```bash
 git clone https://github.com/BuildWithSachin02/random-dog-viewer.git
 cd random-dog-viewer
 ```
 
-**Step 2: Browser में खोलो**
+**Step 2: Open in Browser**
 ```bash
-# सीधे index.html खोल दो
-# या local server use करो (recommended)
+# Simply open index.html
+# Or use a local server (recommended)
 python -m http.server 8000
 ```
 
-**Step 3: Open करो**
-- `http://localhost:8000` खोलो browser में
+**Step 3: Access**
+- Open `http://localhost:8000` in your browser
 
 ---
 
@@ -89,21 +89,21 @@ python -m http.server 8000
 ### Simple Workflow
 
 ```
-1. Page load होता है
+1. Page loads
    ↓
-2. Initial dog image दिखता है
+2. Initial dog image displays
    ↓
-3. User "Get New Dog" button दबाता है
+3. User clicks "Get New Dog" button
    ↓
-4. Image opacity 0.3 हो जाती है (loading effect)
+4. Image opacity changes to 0.3 (loading effect)
    ↓
-5. API को request जाती है
+5. Request sent to API
    ↓
-6. Random dog image URL मिलता है
+6. Random dog image URL received
    ↓
-7. Image update होती है
+7. Image updates
    ↓
-8. Image load होने के बाद opacity 1 हो जाती है
+8. After image loads, opacity returns to 1
 ```
 
 ---
@@ -114,7 +114,7 @@ python -m http.server 8000
 
 **Base URL**: `https://dog.ceo/api`
 
-**Endpoint जो हम use करते हैं**:
+**Endpoint we use**:
 ```
 GET https://dog.ceo/api/breeds/image/random
 ```
@@ -131,17 +131,17 @@ GET https://dog.ceo/api/breeds/image/random
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `message` | String | Dog image का URL |
-| `status` | String | "success" या "error" |
+| `message` | String | Dog image URL |
+| `status` | String | "success" or "error" |
 
-### कैसे काम करता है
+### How It Works
 
 ```javascript
-// API को call करना
+// Calling the API
 fetch("https://dog.ceo/api/breeds/image/random")
-  .then(res => res.json())           // Response को JSON में convert करना
+  .then(res => res.json())           // Convert response to JSON
   .then(data => {
-    // Image URL को update करना
+    // Update image URL
     doggiesApi.src = data.message;
   });
 ```
@@ -177,39 +177,39 @@ fetch("https://dog.ceo/api/breeds/image/random")
 
 ### JavaScript Logic
 
-#### 1. DOM Elements को Select करना
+#### 1. Selecting DOM Elements
 ```javascript
 const doggiesApi = document.getElementById("dog-img");      // Image element
 const dogChngbtn = document.getElementById("dog-change-btn"); // Button
 ```
 
-#### 2. Button पर Click Event
+#### 2. Button Click Event
 ```javascript
 dogChngbtn.addEventListener("click", () => {
-  fetchApi();  // Button दबने पर API call करो
+  fetchApi();  // Call API when button is clicked
 });
 ```
 
-#### 3. API Call करना
+#### 3. Making API Call
 ```javascript
 const fetchApi = () => {
-  // Loading effect के लिए opacity कम करो
+  // Reduce opacity for loading effect
   doggiesApi.style.opacity = "0.3";
   
-  // API को call करो
+  // Call the API
   fetch("https://dog.ceo/api/breeds/image/random")
-    .then(res => res.json())                    // JSON में convert करो
+    .then(res => res.json())                    // Convert to JSON
     .then(data => {
-      doggiesApi.src = data.message;            // Image URL update करो
+      doggiesApi.src = data.message;            // Update image URL
       
-      // Image load होने के बाद
+      // After image loads
       doggiesApi.onload = () => {
-        doggiesApi.style.opacity = "1";         // Opacity normal करो
+        doggiesApi.style.opacity = "1";         // Restore opacity
       };
     });
 };
 
-// Page load पर पहली बार API call करो
+// Call API on page load
 fetchApi();
 ```
 
@@ -241,7 +241,7 @@ body {
 }
 
 .btn:hover {
-  transform: scale(1.05);                 /* Button बड़ा हो जाता है */
+  transform: scale(1.05);                 /* Button scales up */
   box-shadow: 0 10px 25px rgba(0,212,255,0.4);
 }
 ```
@@ -270,11 +270,11 @@ random-dog-viewer/
 
 ## 🖥️ Browser Support
 
-✅ Chrome (Latest)
-✅ Firefox (Latest)
-✅ Safari (Latest)
-✅ Edge (Latest)
-✅ Mobile browsers
+✅ Chrome (Latest)  
+✅ Firefox (Latest)  
+✅ Safari (Latest)  
+✅ Edge (Latest)  
+✅ Mobile browsers  
 
 ---
 
@@ -312,44 +312,44 @@ random-dog-viewer/
 
 ## 🎓 Learning Outcomes
 
-इस project से सीख सकते हो:
+What you can learn from this project:
 
-✅ **REST API** कैसे काम करता है
-✅ **Fetch API** कैसे use करते हैं
-✅ **Promise chaining** कैसे करते हैं
-✅ **DOM manipulation** कैसे करते हैं
-✅ **CSS styling** (gradient, backdrop-filter)
-✅ **Event handling** (click events)
-✅ **Loading states** कैसे show करते हैं
-✅ **JSON** कैसे parse करते हैं
-✅ **Responsive design** कैसे बनाते हैं
+✅ How **REST APIs** work  
+✅ How to use the **Fetch API**  
+✅ How to do **Promise chaining**  
+✅ How to perform **DOM manipulation**  
+✅ **CSS styling** (gradients, backdrop-filter)  
+✅ **Event handling** (click events)  
+✅ How to show **loading states**  
+✅ How to **parse JSON**  
+✅ How to create **responsive design**  
 
 ---
 
 ## 🐛 Troubleshooting
 
-### Images नहीं लोड हो रहे?
-**Solution**: Internet connection check करो, API live है
+### Images not loading?
+**Solution**: Check your internet connection, verify API is live
 
-### Button काम नहीं कर रहा?
-**Solution**: Browser console (F12) check करो, error देखो
+### Button not working?
+**Solution**: Check browser console (F12), look for errors
 
-### CSS styles apply नहीं हो रहे?
-**Solution**: style.css file properly linked है क्या check करो
+### CSS styles not applying?
+**Solution**: Verify style.css file is properly linked
 
 ---
 
-## 💡 Improvements जो कर सकते हो
+## 💡 Possible Improvements
 
-- [ ] Dog breed filter add करना
-- [ ] "Like" button add करना
-- [ ] Saved images का list बनाना
-- [ ] Share button add करना
-- [ ] Loading skeleton add करना
-- [ ] Error handling improve करना
-- [ ] Keyboard shortcuts add करना
-- [ ] Dark/Light theme toggle
-- [ ] Image counter add करना
+- [ ] Add dog breed filter
+- [ ] Add "Like" button functionality
+- [ ] Create saved images list
+- [ ] Add share button
+- [ ] Add loading skeleton
+- [ ] Improve error handling
+- [ ] Add keyboard shortcuts
+- [ ] Add dark/light theme toggle
+- [ ] Add image counter
 
 ---
 
@@ -378,19 +378,19 @@ random-dog-viewer/
 
 ## 📝 Notes
 
-- यह एक **practice project** है
-- API completely **free** है
+- This is a **practice project**
+- API is completely **free**
 - **No authentication** required
-- API काम करता रहे इसका **guarantee** नहीं
+- There's **no guarantee** the API will always work
 
 ---
 
 ## 🎯 Quick Tips
 
-1. **F12 दबाकर** DevTools खोलो
-2. **Network tab** में API calls देख सकते हो
-3. **Console tab** में errors देख सकते हो
-4. **Inspect element** से HTML/CSS modify कर सकते हो
+1. Press **F12** to open DevTools
+2. Check **Network tab** to see API calls
+3. Check **Console tab** to see errors
+4. Use **Inspect element** to modify HTML/CSS
 
 ---
 
@@ -400,7 +400,4 @@ random-dog-viewer/
 
 ---
 
-
-⭐ अगर helpful लगा तो GitHub पर **star** करो! ⭐
-
-
+⭐ If you find this helpful, give it a **star** on GitHub! ⭐
