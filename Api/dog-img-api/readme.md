@@ -1,6 +1,6 @@
 # Random Dog Viewer 🐕
 
-A simple and fun web application that displays random dog images. This project is built for **API integration practice**.
+A simple and fun web application that displays random dog images. This project is built for **API integration practice**
 
 ![Status](https://img.shields.io/badge/status-Learning%20Project-yellow)
 ![API](https://img.shields.io/badge/API-Dog.CEO-blue)
@@ -401,3 +401,4 @@ What you can learn from this project:
 ---
 
 ⭐ If you find this helpful, give it a **star** on GitHub! ⭐
+
