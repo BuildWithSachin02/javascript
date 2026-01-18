@@ -4,7 +4,7 @@
 A simple yet effective **Counter Application** built using **HTML, CSS, and JavaScript**.  
 This project focuses on state management and conditional logic with defined limits.
 
----
+--
 
 ## ✨ Features
 
