@@ -2,7 +2,7 @@
 
 A simple and elegant real-time digital clock that displays the current day, hours, minutes, and seconds with a modern gradient background and sleek black display panel.
 
-## ✨ Features:--
+## ✨ Features:
 
 - **Real-time Updates**: Clock updates every second automatically
 - **Day Display**: Shows current day of the week (SUN, MON, TUE, WED, THUR, FRI, SAT)
