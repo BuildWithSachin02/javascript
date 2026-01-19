@@ -4,7 +4,7 @@
 A simple and logic-focused **Number Guessing Game** built using **HTML, CSS, and JavaScript**.  
 This project helps strengthen conditional logic, random number generation, and user input handling.
 
---
+
 
 ## ✨ Features
 
