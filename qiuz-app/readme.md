@@ -7,7 +7,7 @@ It allows users to attempt a timed quiz, automatically calculates the score, and
 
 The application is designed to demonstrate **core JavaScript concepts** such as DOM manipulation, timers, conditional logic, localStorage, and page navigation.
 
---
+
 
 ## 🚀 Features
 
