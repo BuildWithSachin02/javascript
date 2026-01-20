@@ -3,7 +3,7 @@
 A simple and clean **Tip Calculator** built using **HTML, CSS, and JavaScript**.  
 This project helps calculate the total bill amount by adding a tip percentage entered by the user.
 
--
+
 
 ## 🚀 Features
 
