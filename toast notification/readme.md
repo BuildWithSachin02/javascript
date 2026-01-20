@@ -1,4 +1,4 @@
-# Custom Toast Notification System
+# Custom Toast Notification System--
 
 A lightweight, customizable toast notification library built with vanilla HTML, CSS, and JavaScript. This project provides an easy way to display temporary notification messages with different styles (success, danger, warning, info).
 
