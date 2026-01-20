@@ -19,7 +19,7 @@ The application is designed to demonstrate **core JavaScript concepts** such as 
 - Retry quiz functionality  
 - Clean and responsive UI using Bootstrap  
 
----
+
 
 ## 🛠️ Technologies Used
 
