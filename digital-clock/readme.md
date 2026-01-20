@@ -1,4 +1,4 @@
-# Digital Clock
+# Digital Clock--
 
 A simple and elegant real-time digital clock that displays the current day, hours, minutes, and seconds with a modern gradient background and sleek black display panel.
 
