@@ -8,7 +8,7 @@ A simple and fun web application that displays random dog images. This project i
 ![CSS](https://img.shields.io/badge/CSS3-✓-green)
 ![JavaScript](https://img.shields.io/badge/JavaScript-✓-green)
 
-
+----
 
 ## 📋 Table of Contents
 
@@ -401,6 +401,7 @@ What you can learn from this project:
 ---
 
 ⭐ If you find this helpful, give it a **star** on GitHub! ⭐
+
 
 
 
