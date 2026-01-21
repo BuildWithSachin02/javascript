@@ -14,7 +14,7 @@ This project demonstrates DOM manipulation, CSS animations, and clean UI design 
 - 📱 Responsive & modern UI design
 - 🧠 Clean and readable JavaScript logic
 
----
+----
 
 ## 🛠️ Tech Stack
 
