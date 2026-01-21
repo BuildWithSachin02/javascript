@@ -19,7 +19,7 @@ This project calculates a user’s age in **years, months, days, hours, minutes,
 - 🎨 Clean and modern UI
 - 🚫 Input validation (date required)
 
----
+----
 
 ## 🛠️ Tech Stack
 
