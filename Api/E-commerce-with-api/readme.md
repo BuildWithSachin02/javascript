@@ -2,7 +2,7 @@
 
 **OUTPUT**
 LINK: https://buildwithsachin02.github.io/showEasestore/
-***/
+<BR>
 A modern, fully responsive e-commerce platform built with vanilla HTML, CSS, and JavaScript. This is an **educational project** showcasing API integration, DOM manipulation, and localStorage functionality.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
