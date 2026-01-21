@@ -13,7 +13,7 @@ The navigation bar smoothly expands and collapses with a rotating menu animation
 - Responsive and modern UI
 - Pure HTML, CSS & JavaScript (no libraries)
 
----
+----
 
 ## 🔹 Technologies Used
 
