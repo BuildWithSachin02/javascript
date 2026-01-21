@@ -1,3 +1,4 @@
+-------
 # 💰 Premium Price Range Slider
 
 <div align="center">
