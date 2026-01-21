@@ -14,7 +14,7 @@ This project helps calculate the total bill amount by adding a tip percentage en
 - Clean and responsive UI
 - Beginner-friendly logic
 
----
+----
 
 ## 🛠️ Technologies Used
 
