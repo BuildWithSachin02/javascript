@@ -1,3 +1,4 @@
+--------------------------------
 # 💰 Tip Calculator
 
 A simple and clean **Tip Calculator** built using **HTML, CSS, and JavaScript**.  
