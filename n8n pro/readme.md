@@ -1,3 +1,4 @@
+---------------------------------------
 # ⚡ N8N Workflow Dashboard
 
 A simple web dashboard to view and manage N8N automation workflows.
