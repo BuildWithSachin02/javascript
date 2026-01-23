@@ -1,3 +1,4 @@
+-------------------------------------
 # ShopEase - E-Commerce Platform
 
 **OUTPUT**
