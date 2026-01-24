@@ -1,3 +1,4 @@
+--------------------------------
 This project is a simple Student Registration Form built using HTML, CSS, and JavaScript. It allows users to input basic details such as username, email, mobile number, and password. The form includes front-end validation logic to ensure correct data entry — including email format check, strong password validation (uppercase, lowercase, number, and special character), and 10-digit numeric phone number verification. The UI is clean, responsive, and user-friendly, making it suitable for beginners learning form handling and validation.
 
 Paragraph 2:-
