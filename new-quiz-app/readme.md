@@ -1,5 +1,5 @@
----------------------------
-📘 Quiz App – JavaScript Based MCQ Test---
+-------------------------------------------------
+📘 Quiz App – JavaScript Based MCQ Test
 
 
 A fully functional Quiz Application built using HTML, CSS, and JavaScript.
