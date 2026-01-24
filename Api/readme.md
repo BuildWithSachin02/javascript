@@ -1,3 +1,4 @@
+-----------------------------------------------
 # 🔌 API - Application Programming Interface
 
 <div align="center">
@@ -813,6 +814,7 @@ This repository is for educational purposes. Feel free to use and learn!
 *Keep learning, keep building! 🚀*
 
 </div>
+
 
 
 
