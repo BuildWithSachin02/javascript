@@ -1,3 +1,4 @@
+------------------------------------------------------------------------
 # MCQ Quiz Application (JavaScript)
 
 ## 📌 Project Overview
