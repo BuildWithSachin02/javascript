@@ -1,4 +1,4 @@
----------------------------------------------
+--------------------------------------------
 # 🎲 Dice Roll Simulator
 
 An interactive and visually polished **Dice Roll Simulator** built using **HTML, CSS, and JavaScript**.  
