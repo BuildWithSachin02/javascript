@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------
-# ShopEase - E-Commerce Platform
+# ShopEase - E-Commerce Platform---
 
 **OUTPUT**
 LINK: https://buildwithsachin02.github.io/showEasestore/
