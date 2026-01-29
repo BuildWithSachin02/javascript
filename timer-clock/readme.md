@@ -1,4 +1,4 @@
---------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 # Simple Timer
 
 A sleek, modern countdown timer application built with vanilla HTML, CSS, and JavaScript. Enter seconds and start the countdown with an intuitive interface and real-time display.
