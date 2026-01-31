@@ -1,4 +1,4 @@
----------------------------------------------------------------------------
+--------------------------------------------------------------------------
 # Animated Navigation Menu
 
 This project demonstrates a clean and interactive **Animated Navigation Menu** built using **HTML, CSS, and JavaScript**.  
