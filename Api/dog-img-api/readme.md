@@ -1,4 +1,4 @@
-------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 # Random Dog Viewer 🐕
 
 A simple and fun web application that displays random dog images. This project is built for **API integration practice**
